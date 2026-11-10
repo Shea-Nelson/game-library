@@ -1,25 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f4efe6">
-<meta name="color-scheme" content="light dark">
-<meta name="description" content="BoardGameGeek collection for Scorpy311 and sourced Davenport game recommendations. Not a packing list.">
-<title>Board Game Collection &amp; Davenport Picks</title>
-<link rel="icon" href="shelf/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shea's Game Shelf · The Nelson family board game library</title>
+<meta name="description" content="Every board game on Shea Nelson's shelf, with box art, player counts, rulebooks, errata, house rules, and how-to-play videos.">
+<meta name="theme-color" content="#2a1d5c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232a1d5c'/><circle cx='22' cy='22' r='6' fill='%23f6c56b'/><circle cx='42' cy='42' r='6' fill='%23f6c56b'/><circle cx='42' cy='22' r='6' fill='%2370e0cf'/><circle cx='22' cy='42' r='6' fill='%2370e0cf'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@600;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shelf/base.css">
-<link rel="stylesheet" href="shelf/doc.css">
-<script src="shelf/theme-init.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function(){try{var t=localStorage.getItem('gs-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
-<body data-root="./">
-<a class="skip" href="#app">Skip to games</a>
-<main id="app"><p class="loading">Loading the collection…</p></main>
-<noscript><p class="noscript">This page needs JavaScript to show the collection.</p></noscript>
-<script type="module" src="shelf/nav.js"></script>
-<script type="module" src="games.js"></script>
+<body>
+<a class="skip" href="#grid">Skip to games</a>
+
+<header class="hero" id="top">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__bar">
+      <span class="wordmark" aria-label="Shea's Game Shelf">Shea's Game Shelf</span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__label">Dark mode</span>
+      </button>
+    </div>
+    <h1 class="hero__title">Every game on the Nelson family shelf</h1>
+    <p class="hero__lede">Box art, player counts, rulebooks, errata, house rules, and how-to-play videos for family night, the Dawn &amp; Lily game days, and the Davenport weekend.</p>
+    <dl class="hero__stats" id="heroStats" aria-live="polite"></dl>
+  </div>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <div class="wrap toolbar__inner">
+    <div class="toolbar__row">
+      <label class="search">
+        <span class="sr-only">Search games</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" type="search" placeholder="Search games, designers, mechanics…" autocomplete="off" enterkeyhint="search">
+      </label>
+      <div class="sort">
+        <label for="sortBy" class="sr-only">Sort by</label>
+        <select id="sortBy">
+          <option value="name">Name</option>
+          <option value="players">Players</option>
+          <option value="time">Play time</option>
+          <option value="weight">Weight</option>
+          <option value="rating">BGG rating</option>
+          <option value="year">Year</option>
+        </select>
+        <button type="button" id="sortDir" class="icon-btn" aria-label="Sort ascending" title="Toggle sort direction">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <button type="button" id="filtersBtn" class="filters-btn" aria-expanded="false" aria-controls="filters">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Filters</span><span class="filters-btn__count" id="filterCount" hidden></span>
+      </button>
+    </div>
+    <div class="players" role="group" aria-labelledby="playersLbl">
+      <span id="playersLbl" class="players__label">Plays with</span>
+      <div class="chips chips--scroll" id="playerChips"></div>
+    </div>
+    <div class="filters" id="filters" hidden>
+      <div class="filters__grid">
+        <fieldset class="fgroup">
+          <legend>Play time</legend>
+          <div class="chips" id="timeChips"></div>
+        </fieldset>
+        <fieldset class="fgroup">
+          <legend>Weight</legend>
+          <div class="chips" id="weightChips"></div>
+        </fieldset>
+        <div class="fgroup">
+          <label for="catSel" class="flabel">Category</label>
+          <select id="catSel"><option value="">Any category</option></select>
+        </div>
+        <div class="fgroup">
+          <label for="mechSel" class="flabel">Mechanic</label>
+          <select id="mechSel"><option value="">Any mechanic</option></select>
+        </div>
+        <fieldset class="fgroup">
+          <legend>Extras</legend>
+          <div class="toggles">
+            <label class="toggle"><input type="checkbox" id="fBest"><span>Best at that player count</span></label>
+            <label class="toggle"><input type="checkbox" id="fHouse"><span>Has house rules</span></label>
+            <label class="toggle"><input type="checkbox" id="fVideo"><span>Has a how-to-play video</span></label>
+            <label class="toggle"><input type="checkbox" id="fExp"><span>Has expansions</span></label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="filters__foot">
+        <button type="button" id="clearAll" class="link-btn">Clear all filters</button>
+        <button type="button" id="doneBtn" class="done-btn">Show games</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+  <p class="result-line" id="resultLine" aria-live="polite"></p>
+  <ul class="grid" id="grid" aria-label="Games"></ul>
+  <div class="empty" id="empty" hidden>
+    <p class="empty__title">No games match those filters.</p>
+    <button type="button" class="done-btn" id="emptyClear">Clear filters</button>
+  </div>
+  <div class="load-error" id="loadError" hidden role="alert"></div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="wordmark wordmark--small">Shea's Game Shelf</span>
+    <p id="snapshot">Data snapshot: loading…</p>
+    <p>Game details, box art, player polls, weights, files and forums come from <a href="https://boardgamegeek.com/collection/user/Scorpy311?own=1">BoardGameGeek</a> (collection: Scorpy311). Rulebooks link to publishers where we found them. Videos are hosted on YouTube by their creators. House rules come from Shea's variants research, each with its source.</p>
+    <p>BGG file downloads need a free BoardGameGeek login. Links marked <span class="badge badge--warn">Not verified</span> could not be confirmed automatically.</p>
+    <p>Stark keeps this page up to date.</p>
+    <p><a href="davenport/">Davenport picks</a> and the earlier collection page.</p>
+    <p class="footer__small">Not affiliated with BoardGameGeek or any publisher. Box art © its publishers.</p>
+  </div>
+</footer>
+
+<dialog class="detail" id="detail" aria-labelledby="dTitle">
+  <div class="detail__inner" id="detailBody"></div>
+</dialog>
+
+<script src="js/app.js" defer></script>
 </body>
 </html>
