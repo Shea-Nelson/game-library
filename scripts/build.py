@@ -161,3 +161,6 @@ out.sort(key=lambda g:re.sub(r'^(the|a) ','',g['name'].lower()))
 os.makedirs(B+"/data",exist_ok=True)
 json.dump(out,open(B+"/data/games.json","w"),indent=1,ensure_ascii=False)
 print(len(out),"base games;",sum(len(g['expansions']) for g in out),"expansions nested")
+
+# Edition fixes (art/year for the edition Shea owns) + regenerate js/games-data.js
+import runpy; runpy.run_path(B+"/scripts/apply_overrides.py")
