@@ -1,0 +1,27 @@
+{
+ "432": {
+  "_why": "Shea owns the Hasbro 2025 English edition (Beat the Heat), not AMIGO Take 5 (1994). Art and year from BGG version 765510.",
+  "year": 2025,
+  "edition": "Hasbro English edition 2025",
+  "publisher": "Hasbro",
+  "publisherSite": null,
+  "image": {
+   "local": "img/432.jpg",
+   "remote": "https://cf.geekdo-images.com/fpZaCk7c8tvAyQqNbOVPGg__itemrep@2x/img/cSXMHD2u8mfaeLIgtMOtfLexxQs=/fit-in/492x600/filters:strip_icc()/pic8987281.png",
+   "thumb": "https://cf.geekdo-images.com/fpZaCk7c8tvAyQqNbOVPGg__small/img/PaZTcEn0JiuJ_Ul2B3zX_tGd4ko=/fit-in/200x150/filters:strip_icc()/pic8987281.png",
+   "source": "BGG version 765510 (Beat the Heat, Hasbro English edition 2025), image pic8987281",
+   "sourceUrl": "https://boardgamegeek.com/boardgameversion/765510/hasbro-english-edition-2025"
+  }
+ },
+ "364266": {
+  "_why": "English edition (Accomplices) cover, not French Complices. BGG version 690486 has no image, so the official Hachette Boardgames UK product image is used.",
+  "edition": "English edition 2023",
+  "image": {
+   "local": "img/364266.jpg",
+   "remote": "https://shop.hachetteboardgames.co.uk/cdn/shop/files/2cbdf720e6e67c6be8b06694a010aa71.png?width=800",
+   "thumb": "https://shop.hachetteboardgames.co.uk/cdn/shop/files/2cbdf720e6e67c6be8b06694a010aa71.png?width=200",
+   "source": "Hachette Boardgames UK official product page (English edition; BGG version 690486 has no image)",
+   "sourceUrl": "https://shop.hachetteboardgames.co.uk/products/accomplices"
+  }
+ }
+}
