@@ -1,0 +1,307 @@
+{
+  "tree": {
+    "t": "Page",
+    "p": {
+      "title": "Board Game Collection & Davenport Picks",
+      "summary": "The BoardGameGeek collection is the owned-games list. Below it are Davenport game recommendations with sourced player counts and times."
+    },
+    "c": [
+      {
+        "t": "Section",
+        "p": {
+          "heading": "Collection on BoardGameGeek"
+        },
+        "c": [
+          {
+            "t": "Properties",
+            "p": {
+              "items": [
+                {
+                  "label": "Source of truth",
+                  "value": "BGG collection for Scorpy311 (owned board games)"
+                },
+                {
+                  "label": "Snapshot",
+                  "value": "113 items, including expansions, as of Nov 7, 2026, 1:40 PM ET"
+                },
+                {
+                  "label": "Sync",
+                  "value": "Shea keeps it current; BG Stats collection sync is on"
+                }
+              ]
+            },
+            "c": []
+          },
+          {
+            "t": "Text",
+            "p": {},
+            "c": [
+              "The 113 is a one-time read of the public list, not a live count. This page doesn't sync with BGG; open the collection for what's owned right now."
+            ]
+          },
+          {
+            "t": "LinkCards",
+            "p": {
+              "links": [
+                {
+                  "title": "Open the current BGG collection",
+                  "site": "boardgamegeek.com",
+                  "href": "https://boardgamegeek.com/collection/user/Scorpy311?own=1&subtype=boardgame&ff=1"
+                }
+              ]
+            },
+            "c": []
+          }
+        ]
+      },
+      {
+        "t": "Section",
+        "p": {
+          "heading": "Davenport recommendations"
+        },
+        "c": [
+          {
+            "t": "Callout",
+            "p": {
+              "tone": "warning"
+            },
+            "c": [
+              "These are recommendations, not a packing list. The picks came from earlier shelf photos and haven't been checked against the BGG collection yet."
+            ]
+          },
+          {
+            "t": "Table",
+            "p": {
+              "columns": [
+                "Game",
+                "Players",
+                "Time",
+                "Why bring it"
+              ],
+              "rows": [
+                [
+                  "Thunder Road: Vendetta",
+                  "2–4",
+                  "45–75 min",
+                  "Chaotic racing and combat that plays great at 4"
+                ],
+                [
+                  "The Quest for El Dorado",
+                  "2–4",
+                  "45–60 min",
+                  "Easy deckbuilding race on a new map every game"
+                ],
+                [
+                  "Quacks (All-In Edition)",
+                  "2–5",
+                  "45 min",
+                  "Everyone plays at once; All-In adds a 5th seat"
+                ],
+                [
+                  "Magical Athlete",
+                  "2–6",
+                  "30 min",
+                  "Silly, light racing that stretches to 6"
+                ],
+                [
+                  "Skull King",
+                  "2–8",
+                  "30–45 min",
+                  "Small box, any group size"
+                ],
+                [
+                  "Just One",
+                  "3–7",
+                  "20 min",
+                  "Co-op word game anyone can join"
+                ],
+                [
+                  "Decrypto",
+                  "3–8",
+                  "30 min",
+                  "Team word duel, great with 4 or more"
+                ],
+                [
+                  "Challengers!",
+                  "1–8",
+                  "45 min",
+                  "Card tournament where everyone plays at the same time"
+                ]
+              ]
+            },
+            "c": []
+          },
+          {
+            "t": "Text",
+            "p": {},
+            "c": [
+              "Players and times are published figures (see Sources), not timed plays."
+            ]
+          }
+        ]
+      },
+      {
+        "t": "Section",
+        "p": {
+          "heading": "Optional extras"
+        },
+        "c": [
+          {
+            "t": "Table",
+            "p": {
+              "columns": [
+                "Game",
+                "When",
+                "Players",
+                "Time"
+              ],
+              "rows": [
+                [
+                  "Lost Ruins of Arnak",
+                  "One long strategy night",
+                  "1–4",
+                  "30 min per player"
+                ],
+                [
+                  "Cosmic Encounter",
+                  "3–5 who want negotiation",
+                  "3–5",
+                  "60–120 min"
+                ],
+                [
+                  "Codenames",
+                  "Big group, 4+",
+                  "4–8+ competitive",
+                  "15 min"
+                ],
+                [
+                  "Feed the Kraken (Deluxe)",
+                  "Only with 5+",
+                  "5–11",
+                  "45–90 min"
+                ],
+                [
+                  "Skull",
+                  "Pocket bluffing filler",
+                  "3–6",
+                  "30 min"
+                ],
+                [
+                  "Toy Battle",
+                  "Two players",
+                  "2",
+                  "15 min"
+                ],
+                [
+                  "Tag Team",
+                  "Two-player alternate",
+                  "2",
+                  "Time not published"
+                ]
+              ]
+            },
+            "c": []
+          }
+        ]
+      },
+      {
+        "t": "Section",
+        "p": {
+          "heading": "Sources"
+        },
+        "c": [
+          {
+            "t": "Text",
+            "p": {},
+            "c": [
+              "For what's owned, BGG is the authority; open the current collection above. Player counts and times come from these publisher and retailer pages."
+            ]
+          },
+          {
+            "t": "LinkCards",
+            "p": {
+              "links": [
+                {
+                  "title": "Thunder Road: Vendetta",
+                  "site": "challengesgames.com",
+                  "href": "https://challengesgames.com/products/thunder-road-vendetta"
+                },
+                {
+                  "title": "The Quest for El Dorado",
+                  "site": "ravensburger.us",
+                  "href": "https://www.ravensburger.us/en-US/products/games/family-games/the-quest-for-el-dorado-27456"
+                },
+                {
+                  "title": "Quacks: All-In Edition",
+                  "site": "store.asmodee.com",
+                  "href": "https://store.asmodee.com/products/quacks-all-in-edition"
+                },
+                {
+                  "title": "Magical Athlete",
+                  "site": "miniaturemarket.com (CMYK listing)",
+                  "href": "https://www.miniaturemarket.com/Magical-Athlete/CMYMAGICALATHELETE00"
+                },
+                {
+                  "title": "Skull King",
+                  "site": "grandpabecksgames.com",
+                  "href": "https://www.grandpabecksgames.com/products/skull-king%c2%ae"
+                },
+                {
+                  "title": "Just One",
+                  "site": "rprod.com",
+                  "href": "https://www.rprod.com/en/games/just-one"
+                },
+                {
+                  "title": "Decrypto",
+                  "site": "hachetteboardgames.com",
+                  "href": "https://www.hachetteboardgames.com/products/decrypto"
+                },
+                {
+                  "title": "Challengers!",
+                  "site": "1moretimegames.com",
+                  "href": "https://1moretimegames.com/en_us/challengers/"
+                },
+                {
+                  "title": "Lost Ruins of Arnak",
+                  "site": "czechgames.com",
+                  "href": "https://www.czechgames.com/games/lost-ruins-of-arnak"
+                },
+                {
+                  "title": "Cosmic Encounter",
+                  "site": "fantasyflightgames.com",
+                  "href": "https://www.fantasyflightgames.com/product/cosmic-encounter/"
+                },
+                {
+                  "title": "Codenames (2015)",
+                  "site": "czechgames.com",
+                  "href": "https://www.czechgames.com/for-press-games/codenames-2015"
+                },
+                {
+                  "title": "Feed the Kraken",
+                  "site": "funtails.de",
+                  "href": "https://funtails.de/en/feed-the-kraken/"
+                },
+                {
+                  "title": "Skull",
+                  "site": "spacecowboys-games.com",
+                  "href": "https://www.spacecowboys-games.com/game/skull/"
+                },
+                {
+                  "title": "Toy Battle",
+                  "site": "rprod.com",
+                  "href": "https://www.rprod.com/en/games/toy-battle"
+                },
+                {
+                  "title": "Tag Team",
+                  "site": "scorpionmasque.com",
+                  "href": "https://www.scorpionmasque.com/en/tag-team"
+                }
+              ]
+            },
+            "c": []
+          }
+        ]
+      }
+    ]
+  }
+}
