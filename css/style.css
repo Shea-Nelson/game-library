@@ -250,3 +250,54 @@ body.sheet-open::after{content:"";position:fixed;inset:0;background:rgba(16,10,3
   body.sheet-open .toolbar{backdrop-filter:none;-webkit-backdrop-filter:none;z-index:50;background:var(--bg)}
   body.sheet-open{overflow:hidden}
 }
+
+/* Shelf switch (Board games / Video games) */
+.shelf-switch{display:grid;grid-template-columns:1fr 1fr;gap:4px;max-width:460px;margin:0 0 12px;padding:4px;
+  border-radius:999px;background:var(--bg-2);border:1px solid var(--line);box-shadow:var(--shadow)}
+.shelf-switch button{height:48px;border:0;border-radius:999px;background:transparent;color:var(--ink);font-weight:800;
+  font-size:1rem;cursor:pointer;transition:background .18s,color .18s,box-shadow .18s}
+.shelf-switch button:hover{background:var(--card)}
+.shelf-switch button[aria-checked="true"]{background:var(--accent);color:var(--accent-ink);box-shadow:0 2px 8px rgba(11,97,88,.28)}
+[data-theme="dark"] .shelf-switch button[aria-checked="true"]{box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.shelf-switch button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* Video game cards: portrait cover, hours as the big number */
+.card--video .card__art{aspect-ratio:2/3;padding:0;overflow:hidden}
+.card--video .card__art img{top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:none;border-radius:0}
+.card--video .card__art--wide img{object-fit:cover;object-position:center}
+.card__monogram{display:none;font-family:var(--font-head);font-weight:800;font-size:4.5rem;color:rgba(29,22,54,.28);line-height:1;
+  user-select:none}
+[data-theme="dark"] .card__monogram{color:rgba(242,238,250,.28)}
+.card__art--missing .card__monogram{display:grid;place-items:center;width:100%;height:100%}
+.card__art--missing img{display:none}
+.empty__lede{margin:0 auto 20px;max-width:42ch;color:var(--ink-soft)}
+.card__platform{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:2px 8px;margin-left:auto;white-space:nowrap}
+.card--video .card__year{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card--video .meta{font-size:.82rem}
+
+/* Video detail art is often portrait */
+.d-head--video{align-items:stretch}
+.d-head--video img{aspect-ratio:2/3;object-fit:cover;object-position:center top;max-height:340px;width:auto;margin:0 auto}
+.d-head--video.d-head--wide img{aspect-ratio:16/9;max-height:none;width:100%;object-fit:cover}
+
+@media (max-width:720px){
+  .shelf-switch{max-width:none;margin-bottom:10px}
+  .shelf-switch button{height:44px;font-size:.95rem}
+  .card--video .card__art{aspect-ratio:2/3}
+  .d-head--video{grid-template-columns:100px 1fr}
+  .d-head--video img{max-height:160px}
+  html{scroll-padding-top:210px}
+}
+
+/* Avoid a flash of the wrong shelf's chips before JS runs */
+html[data-shelf="video"] .board-only{display:none!important}
+html[data-shelf="board"] .video-only{display:none!important}
+
+.video-toolbar-chips{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;margin-top:10px;min-width:0}
+.video-toolbar-chips .players{margin-top:0;min-width:0}
+@media (max-width:720px){
+  .video-toolbar-chips{flex-wrap:wrap;gap:8px 16px}
+  .video-toolbar-chips .players{flex:1 1 100%}
+}

@@ -1,18 +1,25 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-shelf="board">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shea's Game Shelf · The Nelson family board game library</title>
-<meta name="description" content="Every board game on Shea Nelson's shelf, with box art, player counts, rulebooks, errata, house rules, and how-to-play videos.">
+<title>Shea's Game Shelf · The Nelson family game library</title>
+<meta name="description" content="The Nelson family's game library: board games with box art, rulebooks, and how-to-play videos, plus Shea's Steam library on PC. Filterable and sortable.">
 <meta name="theme-color" content="#2a1d5c">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232a1d5c'/><circle cx='22' cy='22' r='6' fill='%23f6c56b'/><circle cx='42' cy='42' r='6' fill='%23f6c56b'/><circle cx='42' cy='22' r='6' fill='%2370e0cf'/><circle cx='22' cy='42' r='6' fill='%2370e0cf'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script>
-  (function(){try{var t=localStorage.getItem('gs-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+  (function(){try{
+    var t=localStorage.getItem('gs-theme');if(t)document.documentElement.setAttribute('data-theme',t);
+    var s=location.hash;
+    if(/^#video(\/|$)/.test(s))document.documentElement.setAttribute('data-shelf','video');
+    else if(/^#game\//.test(s)||s==='#board')document.documentElement.setAttribute('data-shelf','board');
+    else {var l=localStorage.getItem('gs-shelf');if(l==='video'||l==='board')document.documentElement.setAttribute('data-shelf',l);}
+  }catch(e){}})();
 </script>
 </head>
 <body>
@@ -27,14 +34,18 @@
         <span class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__label">Dark mode</span>
       </button>
     </div>
-    <h1 class="hero__title">Every game on the Nelson family shelf</h1>
-    <p class="hero__lede">Box art, player counts, rulebooks, errata, house rules, and how-to-play videos for family night, the Dawn &amp; Lily game days, and the Davenport weekend.</p>
+    <h1 class="hero__title" id="heroTitle">Every game on the Nelson family shelf</h1>
+    <p class="hero__lede" id="heroLede">Box art, player counts, rulebooks, errata, house rules, and how-to-play videos for family night, the Dawn &amp; Lily game days, and the Davenport weekend.</p>
     <dl class="hero__stats" id="heroStats" aria-live="polite"></dl>
   </div>
 </header>
 
 <div class="toolbar" id="toolbar">
   <div class="wrap toolbar__inner">
+    <div class="shelf-switch" id="shelfSwitch" role="radiogroup" aria-label="Choose a library">
+      <button type="button" role="radio" aria-checked="true" data-shelf="board" id="shelfBoard">Board games</button>
+      <button type="button" role="radio" aria-checked="false" data-shelf="video" id="shelfVideo">Video games</button>
+    </div>
     <div class="toolbar__row">
       <label class="search">
         <span class="sr-only">Search games</span>
@@ -60,12 +71,22 @@
         <span>Filters</span><span class="filters-btn__count" id="filterCount" hidden></span>
       </button>
     </div>
-    <div class="players" role="group" aria-labelledby="playersLbl">
+    <div class="players board-only" id="playerRow" role="group" aria-labelledby="playersLbl">
       <span id="playersLbl" class="players__label">Plays with</span>
       <div class="chips chips--scroll" id="playerChips"></div>
     </div>
+    <div class="video-toolbar-chips video-only" id="videoChipRows" hidden>
+      <div class="players" id="platformRow" role="group" aria-labelledby="platformLbl">
+        <span id="platformLbl" class="players__label">Platform</span>
+        <div class="chips chips--scroll" id="platformChips"></div>
+      </div>
+      <div class="players" id="playedRow" role="group" aria-labelledby="playedLbl">
+        <span id="playedLbl" class="players__label">Played</span>
+        <div class="chips chips--scroll" id="playedChips"></div>
+      </div>
+    </div>
     <div class="filters" id="filters" hidden>
-      <div class="filters__grid">
+      <div class="filters__grid board-only" id="boardFilterGrid">
         <fieldset class="fgroup">
           <legend>Play time</legend>
           <div class="chips" id="timeChips"></div>
@@ -92,6 +113,12 @@
           </div>
         </fieldset>
       </div>
+      <div class="filters__grid video-only" id="videoFilterGrid" hidden>
+        <div class="fgroup">
+          <label for="genreSel" class="flabel">Genre</label>
+          <select id="genreSel"><option value="">Any genre</option></select>
+        </div>
+      </div>
       <div class="filters__foot">
         <button type="button" id="clearAll" class="link-btn">Clear all filters</button>
         <button type="button" id="doneBtn" class="done-btn">Show games</button>
@@ -114,11 +141,10 @@
   <div class="wrap footer__inner">
     <span class="wordmark wordmark--small">Shea's Game Shelf</span>
     <p id="snapshot">Data snapshot: loading…</p>
-    <p>Game details, box art, player polls, weights, files and forums come from <a href="https://boardgamegeek.com/collection/user/Scorpy311?own=1">BoardGameGeek</a> (collection: Scorpy311). Rulebooks link to publishers where we found them. Videos are hosted on YouTube by their creators. House rules come from Shea's variants research, each with its source.</p>
-    <p>BGG file downloads need a free BoardGameGeek login. Links marked <span class="badge badge--warn">Not verified</span> could not be confirmed automatically.</p>
+    <p id="footerCredit">Game details, box art, player polls, weights, files and forums come from <a href="https://boardgamegeek.com/collection/user/Scorpy311?own=1">BoardGameGeek</a> (collection: Scorpy311). Rulebooks link to publishers where we found them. Videos are hosted on YouTube by their creators. House rules come from Shea's variants research, each with its source.</p>
+    <p id="footerNote">BGG file downloads need a free BoardGameGeek login. Links marked <span class="badge badge--warn">Not verified</span> could not be confirmed automatically.</p>
     <p>Stark keeps this page up to date.</p>
-    <p><a href="davenport/">Davenport picks</a> and the earlier collection page.</p>
-    <p class="footer__small">Not affiliated with BoardGameGeek or any publisher. Box art © its publishers.</p>
+    <p class="footer__small" id="footerSmall">Not affiliated with BoardGameGeek or any publisher. Box art © its publishers.</p>
   </div>
 </footer>
 
