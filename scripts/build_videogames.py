@@ -254,21 +254,34 @@ def main():
             with_year += 1
         records.append(rec)
 
+    # Keep previously built Switch records so a Steam rebuild does not wipe them.
+    switch_records = []
+    switch_cache = ROOT / "work" / "switch" / "records.json"
+    if switch_cache.exists():
+        try:
+            switch_records = json.loads(switch_cache.read_text())
+        except Exception:
+            switch_records = []
+    records = [r for r in records if r.get("platform") != "switch2"] + switch_records
+
     generated = now_et_iso()
+    with_genres = sum(1 for r in records if r.get("genres"))
+    with_year = sum(1 for r in records if r.get("year"))
     payload = {
         "generated": generated,
-        "source": "Steam GetOwnedGames for profile LordScorpy (SteamID 76561197970277783)",
-        "note": "Box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. Switch 2 games will be added when Shea sends screenshots. Genres and release years come from the public Steam store appdetails API.",
+        "source": "Steam GetOwnedGames for profile LordScorpy (SteamID 76561197970277783)"
+        + ("; Nintendo Switch library from scripts/switch_catalog.json" if switch_records else ""),
+        "note": "PC box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. Switch box art is hotlinked from Nintendo's official store CDN when a matching product page was found. Genres and release years for PC games come from the public Steam store appdetails API. Switch store links are included only when verified.",
         "stats": {
             "generated": generated,
             "total": len(records),
             "pc": sum(1 for r in records if r["platform"] == "pc"),
             "switch2": sum(1 for r in records if r["platform"] == "switch2"),
-            "played": sum(1 for r in records if not r["neverPlayed"]),
-            "neverPlayed": sum(1 for r in records if r["neverPlayed"]),
+            "played": sum(1 for r in records if r.get("neverPlayed") is False),
+            "neverPlayed": sum(1 for r in records if r.get("neverPlayed") is True),
             "withGenres": with_genres,
             "withYear": with_year,
-            "totalMinutes": sum(r["minutesPlayed"] for r in records),
+            "totalMinutes": sum(r.get("minutesPlayed") or 0 for r in records),
         },
         "games": records,
     }

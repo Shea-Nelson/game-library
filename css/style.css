@@ -301,3 +301,12 @@ html[data-shelf="board"] .video-only{display:none!important}
   .video-toolbar-chips{flex-wrap:wrap;gap:8px 16px}
   .video-toolbar-chips .players{flex:1 1 100%}
 }
+
+/* Switch Digital / Physical / Both badge in place of hours */
+.card__format{display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:999px;
+  font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1}
+.card__format--digital{background:var(--accent-soft);color:var(--accent)}
+.card__format--physical{background:var(--gold-soft, rgba(196,149,46,.22));color:var(--gold, #8a5a00)}
+.card__format--both{background:var(--accent-soft);color:var(--accent);box-shadow:inset 0 0 0 2px var(--gold, #c4952e)}
+[data-theme="dark"] .card__format--physical{color:#f0c56e;background:rgba(196,149,46,.2)}
+[data-theme="dark"] .card__format--both{box-shadow:inset 0 0 0 2px #f0c56e}

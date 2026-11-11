@@ -1,0 +1,1440 @@
+{
+  "source": "Transcribed from Shea's Nintendo Switch 2 Virtual Game Cards screens and physical cartridge shelf photos. Official titles and store links verified against Nintendo.com when a matching product page was found. The Legend of Zelda: Ocarina of Time was added at Shea's request; it is not on the VGC screens.",
+  "skipped": {
+    "apps": [
+      "YouTube",
+      "Hulu",
+      "Pokémon HOME"
+    ],
+    "demos": [
+      "Mario Tennis Aces Online Tournament Demo",
+      "ARMS Global Testpunch",
+      "Splatoon 2 Global Testfire"
+    ],
+    "unreadable_or_uncertain": [],
+    "note": "The VGC start screen shows All (124), which includes apps and demos; those were not added as library games. The lamp in photo 01 was only a reflection — there were no hidden tiles. Physical shelf read as 27 cartridges (not the roughly 31 mentioned in passing); no extra spines were invented."
+  },
+  "games": [
+    {
+      "id": "nsw-reanimal",
+      "name": "REANIMAL",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch2",
+      "storeSlugs": [
+        "reanimal-switch-2"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/reanimal-switch-2/"
+    },
+    {
+      "id": "nsw-super-mario-galaxy-2",
+      "name": "Super Mario Galaxy 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-mario-galaxy-2-switch",
+        "super-mario-galaxy-plus-super-mario-galaxy-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-runbow",
+      "name": "Runbow",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "runbow-switch"
+      ]
+    },
+    {
+      "id": "nsw-ultimate-sheep-raccoon",
+      "name": "Ultimate Sheep Raccoon",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "ultimate-sheep-raccoon-switch"
+      ]
+    },
+    {
+      "id": "nsw-heave-ho-2",
+      "name": "Heave Ho 2",
+      "format": "Digital",
+      "type": "game",
+      "storeSlugs": [
+        "heave-ho-2-switch-2",
+        "heave-ho-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-bafl",
+      "name": "BAFL - Brakes Are For Losers",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "bafl-brakes-are-for-losers-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/bafl-brakes-are-for-losers-switch/"
+    },
+    {
+      "id": "nsw-clusterpuck-99",
+      "name": "Clusterpuck 99",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "clusterpuck-99-switch",
+        "clustertruck-switch"
+      ]
+    },
+    {
+      "id": "nsw-stikbold-deluxe",
+      "name": "Stikbold! Deluxe",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "stikbold-a-dodgeball-adventure-deluxe-switch"
+      ]
+    },
+    {
+      "id": "nsw-ticket-to-ride",
+      "name": "Ticket to Ride",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "ticket-to-ride-switch"
+      ]
+    },
+    {
+      "id": "nsw-mario-strikers-battle-league",
+      "name": "Mario Strikers: Battle League",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mario-strikers-battle-league-switch"
+      ]
+    },
+    {
+      "id": "nsw-catan-console-edition",
+      "name": "CATAN - Console Edition",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "catan-console-edition-switch",
+        "catan-switch"
+      ]
+    },
+    {
+      "id": "nsw-super-mario-bros-wonder",
+      "name": "Super Mario Bros. Wonder",
+      "format": "Both",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-mario-bros-wonder-switch"
+      ]
+    },
+    {
+      "id": "nsw-lets-play-oink-games",
+      "name": "Let's Play! Oink Games",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "lets-play-oink-games-switch"
+      ]
+    },
+    {
+      "id": "nsw-jackbox-11",
+      "name": "The Jackbox Party Pack 11",
+      "format": "Digital",
+      "type": "game",
+      "storeSlugs": [
+        "the-jackbox-party-pack-11-switch",
+        "the-jackbox-party-pack-11-switch-2"
+      ]
+    },
+    {
+      "id": "nsw-hollow-knight",
+      "name": "Hollow Knight",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "hollow-knight-switch"
+      ]
+    },
+    {
+      "id": "nsw-knight-squad-2",
+      "name": "Knight Squad 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "knight-squad-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-mario-party-jamboree-s2e",
+      "name": "Super Mario Party Jamboree – Nintendo Switch 2 Edition + Jamboree TV",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch2-edition",
+      "storeSlugs": [
+        "super-mario-party-jamboree-nintendo-switch-2-edition-plus-jamboree-tv-switch-2"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-party-jamboree-nintendo-switch-2-edition-plus-jamboree-tv-switch-2/"
+    },
+    {
+      "id": "nsw-persona-5-royal",
+      "name": "Persona 5 Royal",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "persona-5-royal-switch"
+      ]
+    },
+    {
+      "id": "nsw-grindstone",
+      "name": "Grindstone",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "grindstone-switch"
+      ]
+    },
+    {
+      "id": "nsw-trombone-champ",
+      "name": "Trombone Champ",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "trombone-champ-switch"
+      ]
+    },
+    {
+      "id": "nsw-pvz-replanted",
+      "name": "Plants vs. Zombies: Replanted",
+      "format": "Digital",
+      "type": "game",
+      "storeSlugs": [
+        "plants-vs-zombies-replanted-switch",
+        "plants-vs-zombies-replanted-switch-2"
+      ]
+    },
+    {
+      "id": "nsw-monster-train-2",
+      "name": "Monster Train 2",
+      "format": "Digital",
+      "type": "game",
+      "storeSlugs": [
+        "monster-train-2-switch",
+        "monster-train-2-switch-2"
+      ]
+    },
+    {
+      "id": "nsw-tumblestone",
+      "name": "Tumblestone",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "tumblestone-switch"
+      ]
+    },
+    {
+      "id": "nsw-donkey-kong-bananza",
+      "name": "Donkey Kong Bananza",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch2",
+      "storeSlugs": [
+        "donkey-kong-bananza-switch-2"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/donkey-kong-bananza-switch-2/"
+    },
+    {
+      "id": "nsw-moving-out",
+      "name": "Moving Out",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "moving-out-switch"
+      ]
+    },
+    {
+      "id": "nsw-boomerang-fu",
+      "name": "Boomerang Fu",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "boomerang-fu-switch"
+      ]
+    },
+    {
+      "id": "nsw-hot-shot-burn",
+      "name": "Hot Shot Burn",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "hot-shot-burn-switch"
+      ]
+    },
+    {
+      "id": "nsw-block-party-dx",
+      "name": "Block Party DX!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "block-party-dx-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/block-party-dx-switch/"
+    },
+    {
+      "id": "nsw-art-of-balance",
+      "name": "Art of Balance",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "art-of-balance-switch"
+      ]
+    },
+    {
+      "id": "nsw-move-or-die-unleashed",
+      "name": "Move or Die: Unleashed",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "move-or-die-unleashed-switch",
+        "move-or-die-switch"
+      ]
+    },
+    {
+      "id": "nsw-nintendo-switch-sports",
+      "name": "Nintendo Switch Sports",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "nintendo-switch-sports-switch"
+      ]
+    },
+    {
+      "id": "nsw-super-crazy-rhythm-castle",
+      "name": "Super Crazy Rhythm Castle",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-crazy-rhythm-castle-switch"
+      ]
+    },
+    {
+      "id": "nsw-carcassonne",
+      "name": "Carcassonne",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "carcassonne-switch"
+      ]
+    },
+    {
+      "id": "nsw-overcooked-2",
+      "name": "Overcooked! 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "overcooked-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-unrailed",
+      "name": "Unrailed!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "unrailed-switch"
+      ]
+    },
+    {
+      "id": "nsw-hole-io",
+      "name": "Hole io",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "hole-io-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/hole-io-switch/"
+    },
+    {
+      "id": "nsw-beasties",
+      "name": "Beasties",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "beasties-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/beasties-switch/"
+    },
+    {
+      "id": "nsw-broforce",
+      "name": "Broforce",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "broforce-switch"
+      ]
+    },
+    {
+      "id": "nsw-street-fighter-6",
+      "name": "Street Fighter 6",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch2",
+      "storeSlugs": [
+        "street-fighter-6-switch-2"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/street-fighter-6-switch-2/"
+    },
+    {
+      "id": "nsw-clubhouse-games",
+      "name": "Clubhouse Games: 51 Worldwide Classics",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "clubhouse-games-51-worldwide-classics-switch"
+      ]
+    },
+    {
+      "id": "nsw-fortnite",
+      "name": "Fortnite",
+      "format": "Digital",
+      "type": "game",
+      "storeSlugs": [
+        "fortnite-switch",
+        "fortnite-switch-2"
+      ]
+    },
+    {
+      "id": "nsw-mario-kart-world",
+      "name": "Mario Kart World",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch2",
+      "storeSlugs": [
+        "mario-kart-world-switch-2"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/"
+    },
+    {
+      "id": "nsw-lets-sing-2025",
+      "name": "Let's Sing 2025",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "lets-sing-2025-switch"
+      ]
+    },
+    {
+      "id": "nsw-rabbids-party-of-legends",
+      "name": "Rabbids: Party of Legends",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "rabbids-party-of-legends-switch"
+      ]
+    },
+    {
+      "id": "nsw-thronebreaker",
+      "name": "Thronebreaker: The Witcher Tales",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "thronebreaker-the-witcher-tales-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/thronebreaker-the-witcher-tales-switch/"
+    },
+    {
+      "id": "nsw-metroid-dread",
+      "name": "Metroid Dread",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "metroid-dread-switch"
+      ]
+    },
+    {
+      "id": "nsw-princess-peach-showtime",
+      "name": "Princess Peach: Showtime!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "princess-peach-showtime-switch"
+      ]
+    },
+    {
+      "id": "nsw-uno",
+      "name": "UNO",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "uno-switch"
+      ]
+    },
+    {
+      "id": "nsw-cytus-alpha",
+      "name": "Cytus α",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "cytus-switch",
+        "cytus-alpha-switch"
+      ]
+    },
+    {
+      "id": "nsw-taiko-rhythm-festival",
+      "name": "Taiko no Tatsujin: Rhythm Festival",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "taiko-no-tatsujin-rhythm-festival-switch",
+        "taiko-no-tatsujin-nintendo-switch-version-switch"
+      ]
+    },
+    {
+      "id": "nsw-just-shapes-beats",
+      "name": "Just Shapes & Beats",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "just-shapes-and-beats-switch"
+      ]
+    },
+    {
+      "id": "nsw-paper-mario-ttyd",
+      "name": "Paper Mario: The Thousand-Year Door",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "paper-mario-the-thousand-year-door-switch"
+      ]
+    },
+    {
+      "id": "nsw-paper-io-2",
+      "name": "Paper io 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "paper-io-2-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/paper-io-2-switch/"
+    },
+    {
+      "id": "nsw-mario-kart-8-deluxe",
+      "name": "Mario Kart 8 Deluxe",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mario-kart-8-deluxe-switch"
+      ]
+    },
+    {
+      "id": "nsw-animal-crossing-nh",
+      "name": "Animal Crossing: New Horizons",
+      "format": "Both",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "animal-crossing-new-horizons-switch"
+      ]
+    },
+    {
+      "id": "nsw-smash-ultimate",
+      "name": "Super Smash Bros. Ultimate",
+      "format": "Both",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-smash-bros-ultimate-switch"
+      ]
+    },
+    {
+      "id": "nsw-mario-rabbids-sparks",
+      "name": "Mario + Rabbids Sparks of Hope",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mario-plus-rabbids-sparks-of-hope-switch"
+      ]
+    },
+    {
+      "id": "nsw-fall-guys",
+      "name": "Fall Guys",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "fall-guys-switch"
+      ]
+    },
+    {
+      "id": "nsw-warioware-get-it-together",
+      "name": "WarioWare: Get It Together!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "warioware-get-it-together-switch"
+      ]
+    },
+    {
+      "id": "nsw-ultimate-chicken-horse",
+      "name": "Ultimate Chicken Horse",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "ultimate-chicken-horse-switch"
+      ]
+    },
+    {
+      "id": "nsw-pokemon-unite",
+      "name": "Pokémon UNITE",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pokemon-unite-switch"
+      ]
+    },
+    {
+      "id": "nsw-tennis-1920s",
+      "name": "Tennis 1920s",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "tennis-1920s-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/tennis-1920s-switch/"
+    },
+    {
+      "id": "nsw-heave-ho",
+      "name": "Heave Ho",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "heave-ho-switch"
+      ]
+    },
+    {
+      "id": "nsw-capcom-arcade-stadium",
+      "name": "Capcom Arcade Stadium",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "capcom-arcade-stadium-switch"
+      ]
+    },
+    {
+      "id": "nsw-mario-3d-world-bowser",
+      "name": "Super Mario 3D World + Bowser's Fury",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-mario-3d-world-plus-bowsers-fury-switch"
+      ]
+    },
+    {
+      "id": "nsw-wheel-of-fortune",
+      "name": "Wheel of Fortune",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "wheel-of-fortune-switch"
+      ]
+    },
+    {
+      "id": "nsw-lets-sing-2024",
+      "name": "Let's Sing 2024",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "lets-sing-2024-switch"
+      ]
+    },
+    {
+      "id": "nsw-among-us",
+      "name": "Among Us",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "among-us-switch"
+      ]
+    },
+    {
+      "id": "nsw-all-star-fruit-racing",
+      "name": "All-Star Fruit Racing",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "all-star-fruit-racing-switch"
+      ]
+    },
+    {
+      "id": "nsw-pokemon-sword",
+      "name": "Pokémon Sword",
+      "format": "Both",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pokemon-sword-switch"
+      ]
+    },
+    {
+      "id": "nsw-deltarune-ch12",
+      "name": "Deltarune Chapter 1&2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "deltarune-chapter-1-and-2-switch",
+        "deltarune-switch",
+        "deltarune-chapter-1-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-galak-z",
+      "name": "GALAK-Z: The Dimensional",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "galak-z-the-dimensional-switch",
+        "galak-z-switch"
+      ]
+    },
+    {
+      "id": "nsw-asphalt",
+      "name": "Asphalt Legends",
+      "format": "Digital",
+      "type": "game",
+      "storeSlugs": [
+        "asphalt-legends-switch"
+      ]
+    },
+    {
+      "id": "nsw-namco-museum",
+      "name": "Namco Museum",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "namco-museum-switch"
+      ]
+    },
+    {
+      "id": "nsw-four-kings-casino",
+      "name": "The Four Kings Casino and Slots",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-four-kings-casino-and-slots-switch"
+      ]
+    },
+    {
+      "id": "nsw-angry-bunnies",
+      "name": "Angry Bunnies: Colossal Carrot Crusade",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "angry-bunnies-colossal-carrot-crusade-switch"
+      ]
+    },
+    {
+      "id": "nsw-pinball-arcade",
+      "name": "The Pinball Arcade",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-pinball-arcade-switch",
+        "pinball-arcade-switch"
+      ]
+    },
+    {
+      "id": "nsw-brawlhalla",
+      "name": "Brawlhalla",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "brawlhalla-switch"
+      ]
+    },
+    {
+      "id": "nsw-jump-rope-challenge",
+      "name": "Jump Rope Challenge",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "jump-rope-challenge-switch"
+      ]
+    },
+    {
+      "id": "nsw-pokemon-cafe-remix",
+      "name": "Pokémon Café ReMix",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pokemon-cafe-remix-switch",
+        "pokemon-cafe-mix-switch"
+      ]
+    },
+    {
+      "id": "nsw-island-saver",
+      "name": "Island Saver",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "island-saver-switch"
+      ]
+    },
+    {
+      "id": "nsw-pokemon-quest",
+      "name": "Pokémon Quest",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pokemon-quest-switch"
+      ]
+    },
+    {
+      "id": "nsw-ninjala",
+      "name": "Ninjala",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "ninjala-switch"
+      ]
+    },
+    {
+      "id": "nsw-what-the-golf",
+      "name": "WHAT THE GOLF?",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "what-the-golf-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/what-the-golf-switch/"
+    },
+    {
+      "id": "nsw-pocket-mini-golf",
+      "name": "Pocket Mini Golf",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pocket-mini-golf-switch"
+      ]
+    },
+    {
+      "id": "nsw-letter-quest-remastered",
+      "name": "Letter Quest Remastered",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "letter-quest-remastered-switch"
+      ]
+    },
+    {
+      "id": "nsw-moving-out-2",
+      "name": "Moving Out 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "moving-out-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-otttd",
+      "name": "OTTTD: Over The Top Tower Defense",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "otttd-over-the-top-tower-defense-switch",
+        "otttd-switch"
+      ]
+    },
+    {
+      "id": "nsw-death-squared",
+      "name": "Death Squared",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "death-squared-switch"
+      ]
+    },
+    {
+      "id": "nsw-conduct-together",
+      "name": "Conduct Together!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "conduct-together-switch"
+      ]
+    },
+    {
+      "id": "nsw-runner3",
+      "name": "Runner3",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "runner3-switch"
+      ]
+    },
+    {
+      "id": "nsw-super-kirby-clash",
+      "name": "Super Kirby Clash",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-kirby-clash-switch"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/super-kirby-clash-switch/"
+    },
+    {
+      "id": "nsw-marvel-ua3",
+      "name": "Marvel Ultimate Alliance 3: The Black Order",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "marvel-ultimate-alliance-3-the-black-order-switch"
+      ]
+    },
+    {
+      "id": "nsw-minecraft",
+      "name": "Minecraft",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "minecraft-switch"
+      ]
+    },
+    {
+      "id": "nsw-slay-the-spire",
+      "name": "Slay the Spire",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "slay-the-spire-switch"
+      ]
+    },
+    {
+      "id": "nsw-nsmbud",
+      "name": "New Super Mario Bros. U Deluxe",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "new-super-mario-bros-u-deluxe-switch"
+      ]
+    },
+    {
+      "id": "nsw-sparkle-2",
+      "name": "Sparkle 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "sparkle-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-sparkle-unleashed",
+      "name": "Sparkle Unleashed",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "sparkle-unleashed-switch"
+      ]
+    },
+    {
+      "id": "nsw-wargroove",
+      "name": "Wargroove",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "wargroove-switch"
+      ]
+    },
+    {
+      "id": "nsw-dxm-prototype-missions",
+      "name": "Daemon X Machina: Prototype Missions",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "daemon-x-machina-prototype-missions-switch"
+      ],
+      "notes": "Appears to be the Prototype Missions pack on the Virtual Game Cards list, not the full game."
+    },
+    {
+      "id": "nsw-astro-bears-party",
+      "name": "Astro Bears Party",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "astro-bears-party-switch"
+      ]
+    },
+    {
+      "id": "nsw-guacamelee-2",
+      "name": "Guacamelee! 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "guacamelee-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-paw-patrol-on-a-roll",
+      "name": "PAW Patrol: On a Roll!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "paw-patrol-on-a-roll-switch"
+      ]
+    },
+    {
+      "id": "nsw-mega-man-11",
+      "name": "Mega Man 11",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mega-man-11-switch"
+      ]
+    },
+    {
+      "id": "nsw-pixeljunk-monsters",
+      "name": "PixelJunk Monsters 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pixeljunk-monsters-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-jackbox-4",
+      "name": "The Jackbox Party Pack 4",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-jackbox-party-pack-4-switch"
+      ]
+    },
+    {
+      "id": "nsw-steamworld-dig-2",
+      "name": "SteamWorld Dig 2",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "steamworld-dig-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-snipperclips",
+      "name": "Snipperclips: Cut it out, Together!",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "snipperclips-cut-it-out-together-switch",
+        "snipperclips-plus-cut-it-out-together-switch",
+        "snipperclips-switch"
+      ]
+    },
+    {
+      "id": "nsw-pinball-fx3",
+      "name": "Pinball FX3",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pinball-fx3-switch"
+      ]
+    },
+    {
+      "id": "nsw-worms-wmd",
+      "name": "Worms W.M.D",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "worms-wmd-switch",
+        "worms-w-m-d-switch"
+      ]
+    },
+    {
+      "id": "nsw-sonic-mania",
+      "name": "Sonic Mania",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "sonic-mania-switch"
+      ]
+    },
+    {
+      "id": "nsw-botw",
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "format": "Both",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-legend-of-zelda-breath-of-the-wild-switch"
+      ]
+    },
+    {
+      "id": "nsw-shantae-pirates-curse",
+      "name": "Shantae and the Pirate's Curse",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "shantae-and-the-pirates-curse-switch"
+      ]
+    },
+    {
+      "id": "nsw-wonder-boy-dragons-trap",
+      "name": "Wonder Boy: The Dragon's Trap",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "wonder-boy-the-dragons-trap-switch"
+      ]
+    },
+    {
+      "id": "nsw-mr-shifty",
+      "name": "Mr. Shifty",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mr-shifty-switch"
+      ]
+    },
+    {
+      "id": "nsw-shovel-knight-tt",
+      "name": "Shovel Knight: Treasure Trove",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "shovel-knight-treasure-trove-switch"
+      ]
+    },
+    {
+      "id": "nsw-oot",
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "format": "Digital",
+      "type": "game",
+      "switchFamily": "switch2",
+      "storeSlugs": [
+        "the-legend-of-zelda-ocarina-of-time-switch-2"
+      ],
+      "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+      "notes": "Switch 2 exclusive remake. Not visible on the Virtual Game Cards screens; added at Shea's request after official-title verification."
+    },
+    {
+      "id": "nsw-mario-rabbids-kingdom-battle",
+      "name": "Mario + Rabbids Kingdom Battle",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mario-plus-rabbids-kingdom-battle-switch"
+      ]
+    },
+    {
+      "id": "nsw-splatoon-2",
+      "name": "Splatoon 2",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "splatoon-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-skyrim",
+      "name": "The Elder Scrolls V: Skyrim",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-elder-scrolls-v-skyrim-switch"
+      ]
+    },
+    {
+      "id": "nsw-yoshis-crafted-world",
+      "name": "Yoshi's Crafted World",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "yoshis-crafted-world-switch"
+      ]
+    },
+    {
+      "id": "nsw-super-mario-party",
+      "name": "Super Mario Party",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-mario-party-switch"
+      ]
+    },
+    {
+      "id": "nsw-luigis-mansion-3",
+      "name": "Luigi's Mansion 3",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "luigis-mansion-3-switch"
+      ]
+    },
+    {
+      "id": "nsw-kirby-star-allies",
+      "name": "Kirby Star Allies",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "kirby-star-allies-switch"
+      ]
+    },
+    {
+      "id": "nsw-pokken-tournament-dx",
+      "name": "Pokkén Tournament DX",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pokken-tournament-dx-switch"
+      ]
+    },
+    {
+      "id": "nsw-mario-party-superstars",
+      "name": "Mario Party Superstars",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mario-party-superstars-switch"
+      ]
+    },
+    {
+      "id": "nsw-arms",
+      "name": "ARMS",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "arms-switch"
+      ]
+    },
+    {
+      "id": "nsw-mario-tennis-aces",
+      "name": "Mario Tennis Aces",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "mario-tennis-aces-switch"
+      ]
+    },
+    {
+      "id": "nsw-super-mario-odyssey",
+      "name": "Super Mario Odyssey",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-mario-odyssey-switch"
+      ]
+    },
+    {
+      "id": "nsw-kirby-forgotten-land",
+      "name": "Kirby and the Forgotten Land",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "kirby-and-the-forgotten-land-switch"
+      ]
+    },
+    {
+      "id": "nsw-dkc-tropical-freeze",
+      "name": "Donkey Kong Country: Tropical Freeze",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "donkey-kong-country-tropical-freeze-switch"
+      ]
+    },
+    {
+      "id": "nsw-captain-toad",
+      "name": "Captain Toad: Treasure Tracker",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "captain-toad-treasure-tracker-switch"
+      ]
+    },
+    {
+      "id": "nsw-zelda-links-awakening",
+      "name": "The Legend of Zelda: Link's Awakening",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-legend-of-zelda-links-awakening-switch"
+      ]
+    },
+    {
+      "id": "nsw-pikmin-4",
+      "name": "Pikmin 4",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pikmin-4-switch"
+      ]
+    },
+    {
+      "id": "nsw-super-mario-maker-2",
+      "name": "Super Mario Maker 2",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "super-mario-maker-2-switch"
+      ]
+    },
+    {
+      "id": "nsw-zelda-totk",
+      "name": "The Legend of Zelda: Tears of the Kingdom",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "the-legend-of-zelda-tears-of-the-kingdom-switch"
+      ]
+    },
+    {
+      "id": "nsw-bakugan-vestroia",
+      "name": "Bakugan: Champions of Vestroia",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "bakugan-champions-of-vestroia-switch"
+      ]
+    },
+    {
+      "id": "nsw-pokemon-lets-go-pikachu",
+      "name": "Pokémon: Let's Go, Pikachu!",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "pokemon-lets-go-pikachu-switch"
+      ]
+    },
+    {
+      "id": "nsw-sonic-forces-bonus",
+      "name": "Sonic Forces: Bonus Edition",
+      "format": "Physical",
+      "type": "game",
+      "switchFamily": "switch1",
+      "storeSlugs": [
+        "sonic-forces-switch"
+      ]
+    }
+  ]
+}
