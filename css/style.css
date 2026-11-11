@@ -271,6 +271,10 @@ body.sheet-open::after{content:"";position:fixed;inset:0;background:rgba(16,10,3
 [data-theme="dark"] .card__monogram{color:rgba(242,238,250,.28)}
 .card__art--missing .card__monogram{display:grid;place-items:center;width:100%;height:100%}
 .card__art--missing img{display:none}
+.card__art-credit{position:absolute;left:0;right:0;bottom:0;z-index:1;font-size:.62rem;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase;color:#fff;text-align:center;pointer-events:none;
+  padding:16px 8px 6px;background:linear-gradient(transparent,rgba(0,0,0,.62))}
+.d-credit{margin:6px 0 0;font-size:.82rem;color:var(--muted)}
 .empty__lede{margin:0 auto 20px;max-width:42ch;color:var(--ink-soft)}
 .card__platform{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);
   background:var(--accent-soft);border-radius:999px;padding:2px 8px;margin-left:auto;white-space:nowrap}

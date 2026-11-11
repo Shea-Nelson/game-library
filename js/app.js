@@ -499,9 +499,9 @@
       const gen = VMETA && (VMETA.generated || (VMETA.stats && VMETA.stats.generated));
       const when = gen ? new Date(gen).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : "November 2026";
       $("#snapshot").textContent = "Data snapshot: " + when + ". Steam library from profile LordScorpy.";
-      $("#footerCredit").innerHTML = "PC games and playtimes come from <a href=\"https://steamcommunity.com/id/LordScorpy/\">Shea's public Steam library</a>. Cover art is served from Steam's public CDN. Store pages link to Steam. Nintendo games were transcribed from Shea's Switch 2 library photos; official titles, cover art, and store pages come from Nintendo.com when a matching product page was found.";
+      $("#footerCredit").innerHTML = "PC games and playtimes come from <a href=\"https://steamcommunity.com/id/LordScorpy/\">Shea's public Steam library</a>. Official cover art is served from Steam's public CDN. Store pages link to Steam. Nintendo games were transcribed from Shea's Switch 2 library photos; official titles, cover art, and store pages come from Nintendo.com when a matching product page was found. When no official cover could be found, the card uses original title art credited as Art by Scorpy.";
       $("#footerNote").innerHTML = "A Switch 2 or Switch 1 (playing on Switch 2) tag is shown only when that can be verified. How-to-play videos are left off this side of the shelf for now, rather than guessed at. Links marked <span class=\"badge badge--warn\">Not verified</span> could not be confirmed automatically.";
-      $("#footerSmall").textContent = "Not affiliated with Valve, Steam, Nintendo, or any publisher. Cover art © its publishers.";
+      $("#footerSmall").textContent = "Not affiliated with Valve, Steam, Nintendo, or any publisher. Official cover art © its publishers. Cards marked Art by Scorpy are original title art, not official covers.";
       return;
     }
     const gen = META && META.stats && META.stats.generated;
@@ -624,6 +624,7 @@
             data-fallback="${header}" data-fallback2="${capsule}"
             onerror="window.__artFallback&&window.__artFallback(this)">` : ""}
           <div class="card__monogram" aria-hidden="true">${initial}</div>
+          ${g.image && g.image.credit ? `<span class="card__art-credit">${esc(g.image.credit)}</span>` : ""}
         </div>
         <div class="card__body">
           <h2 class="card__title">${esc(g.name)}</h2>
@@ -793,6 +794,7 @@
           <p class="d-kicker">${esc(kicker)}</p>
           <h2 class="d-title" id="dTitle">${esc(g.name)}</h2>
           <p class="d-sub">${madeBy.length ? "by " + esc(madeBy.join(", ")) : ""}</p>
+          ${g.image && g.image.credit ? `<p class="d-credit">${esc(g.image.credit)} — original title art, not official box art</p>` : ""}
           <dl class="d-stats">${statsDl}</dl>
         </div>
       </header>

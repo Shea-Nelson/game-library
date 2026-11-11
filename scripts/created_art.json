@@ -1,0 +1,78 @@
+{
+  "_comment": "Original title art by Scorpy for video games that had no official cover (Steam CDN 404s or no matching Nintendo.com page). Applied by scripts/apply_created_art.py. Do not treat these as official box art.",
+  "steam-2430": {
+    "name": "The Ship Tutorial",
+    "file": "img/created/steam-2430.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-2075800": {
+    "name": "STAR WARS Zero Company™",
+    "file": "img/created/steam-2075800.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-2483190": {
+    "name": "Forza Horizon 6",
+    "file": "img/created/steam-2483190.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-2902740": {
+    "name": "Draw Steel",
+    "file": "img/created/steam-2902740.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-3002240": {
+    "name": "Lunchbreak Tactics",
+    "file": "img/created/steam-3002240.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-3214480": {
+    "name": "Prime Monster",
+    "file": "img/created/steam-3214480.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-3232870": {
+    "name": "King of Tokyo - Richard Garfield",
+    "file": "img/created/steam-3232870.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-3564860": {
+    "name": "Stellar Blade™ Demo",
+    "file": "img/created/steam-3564860.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-4041470": {
+    "name": "iRacing Arcade Demo",
+    "file": "img/created/steam-4041470.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-4078430": {
+    "name": "STAR WARS: Galactic Racer™",
+    "file": "img/created/steam-4078430.webp",
+    "credit": "Art by Scorpy"
+  },
+  "steam-4883590": {
+    "name": "iRacing® Studios NASCAR 26",
+    "file": "img/created/steam-4883590.webp",
+    "credit": "Art by Scorpy"
+  },
+  "nsw-bakugan-vestroia": {
+    "name": "Bakugan: Champions of Vestroia",
+    "file": "img/created/nsw-bakugan-vestroia.webp",
+    "credit": "Art by Scorpy"
+  },
+  "nsw-deltarune-ch12": {
+    "name": "Deltarune Chapter 1&2",
+    "file": "img/created/nsw-deltarune-ch12.webp",
+    "credit": "Art by Scorpy"
+  },
+  "nsw-dxm-prototype-missions": {
+    "name": "Daemon X Machina: Prototype Missions",
+    "file": "img/created/nsw-dxm-prototype-missions.webp",
+    "credit": "Art by Scorpy"
+  },
+  "nsw-galak-z": {
+    "name": "GALAK-Z: The Dimensional",
+    "file": "img/created/nsw-galak-z.webp",
+    "credit": "Art by Scorpy"
+  }
+}

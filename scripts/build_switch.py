@@ -27,6 +27,8 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from apply_created_art import apply_note, apply_to_records
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "scripts" / "switch_catalog.json"
 CACHE_DIR = ROOT / "work" / "switch" / "pages"
@@ -331,6 +333,7 @@ def merge_and_write(switch_records):
     data = json.loads(OUT_JSON.read_text())
     pc = [g for g in data.get("games") or [] if g.get("platform") == "pc"]
     games = pc + switch_records
+    apply_to_records(games)
     generated = now_et_iso()
     with_genres = sum(1 for g in games if g.get("genres"))
     with_year = sum(1 for g in games if g.get("year"))
@@ -346,7 +349,7 @@ def merge_and_write(switch_records):
             "and physical cartridge photos, with official titles, art, years, and store "
             "pages from Nintendo.com when a matching product page was found."
         ),
-        "note": (
+        "note": apply_note(
             "PC box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. "
             "Switch box art is hotlinked from Nintendo's official store CDN (assets.nintendo.com) "
             "when a matching product page was found; otherwise the card uses a monogram. "
