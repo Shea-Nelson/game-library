@@ -32,6 +32,8 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from apply_created_art import apply_note, apply_to_records
+
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OWNED = Path(os.environ.get("STEAM_OWNED", ROOT / "raw" / "steam" / "owned_games.json"))
 CACHE_DIR = ROOT / "work" / "steam" / "appdetails"
@@ -263,6 +265,7 @@ def main():
         except Exception:
             switch_records = []
     records = [r for r in records if r.get("platform") != "switch2"] + switch_records
+    apply_to_records(records)
 
     generated = now_et_iso()
     with_genres = sum(1 for r in records if r.get("genres"))
@@ -271,7 +274,7 @@ def main():
         "generated": generated,
         "source": "Steam GetOwnedGames for profile LordScorpy (SteamID 76561197970277783)"
         + ("; Nintendo Switch library from scripts/switch_catalog.json" if switch_records else ""),
-        "note": "PC box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. Switch box art is hotlinked from Nintendo's official store CDN when a matching product page was found. Genres and release years for PC games come from the public Steam store appdetails API. Switch store links are included only when verified.",
+        "note": apply_note("PC box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. Switch box art is hotlinked from Nintendo's official store CDN when a matching product page was found. Genres and release years for PC games come from the public Steam store appdetails API. Switch store links are included only when verified."),
         "stats": {
             "generated": generated,
             "total": len(records),
