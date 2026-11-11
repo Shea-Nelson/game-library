@@ -5,7 +5,15 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const slug = (s) => String(s).toLowerCase().normalize("NFKD").replace(/[^\w\s-]/g, "").trim().replace(/[\s_]+/g, "-").replace(/-+/g, "-");
   const HUES = [262, 285, 172, 328, 222];
-  const hue = (id) => HUES[Math.abs(id) % HUES.length];
+  const hue = (id) => {
+    let n = 0;
+    if (typeof id === "number" && Number.isFinite(id)) n = id;
+    else {
+      const s = String(id ?? "");
+      for (let i = 0; i < s.length; i++) n = (n * 31 + s.charCodeAt(i)) | 0;
+    }
+    return HUES[Math.abs(n) % HUES.length];
+  };
 
   const ICON = {
     users: '<svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4.5a3.2 3.2 0 010 6.3M18 14.3c1.8.9 3 2.9 3 5.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
@@ -34,7 +42,7 @@
     },
     video: {
       title: "The Nelson family video game library",
-      lede: "Shea's Steam games on PC, with hours played and a link to each store page. Switch 2 games will land here once the screenshots are in.",
+      lede: "Shea's Steam games on PC, with hours played, plus the Nintendo games on the family Switch 2 — Switch 2 titles and Switch 1 games playing on it, marked Digital, Physical, or both.",
       doc: "Shea's Game Shelf · Video games",
       search: "Search games, genres, developers…",
     },
@@ -129,9 +137,24 @@
     });
   }
   function platformLabel(p) {
-    if (p === "switch2") return "Switch 2";
+    if (p === "switch2") return "Nintendo";
     if (p === "pc") return "PC";
     return p || "PC";
+  }
+  function switchFamilyLabel(g) {
+    const f = g && g.switchFamily;
+    if (f === "switch2") return "Switch 2";
+    if (f === "switch2-edition") return "Switch 2 Edition";
+    if (f === "switch1") return "Switch 1";
+    return null;
+  }
+  function isSwitchGame(g) {
+    return g && (g.platform === "switch2" || g.store === "nintendo");
+  }
+  function formatLabel(g) {
+    const f = g && g.format;
+    if (f === "Digital" || f === "Physical" || f === "Both") return f;
+    return null;
   }
   function totalHours(list) {
     const mins = list.reduce((s, g) => s + (g.minutesPlayed || 0), 0);
@@ -169,8 +192,8 @@
   function normalizeVideo(list) {
     list.forEach((g) => {
       g._slug = `${g.appid}-${slug(g.name)}`;
-      g._hay = [g.name, g.store, platformLabel(g.platform), ...(g.genres || []), ...(g.developers || []), ...(g.publishers || []), g.type].join(" ").toLowerCase();
-      byVideoId.set(g.appid, g);
+      g._hay = [g.name, g.store, platformLabel(g.platform), switchFamilyLabel(g), g.format, ...(g.genres || []), ...(g.developers || []), ...(g.publishers || []), g.type].filter(Boolean).join(" ").toLowerCase();
+      byVideoId.set(String(g.appid), g);
     });
   }
   async function loadJSON(path) {
@@ -287,9 +310,16 @@
       b.setAttribute("aria-checked", String(on));
       b.tabIndex = on ? 0 : -1;
     });
+    syncPlayedRow();
     stats();
     footer();
     fillSort();
+  }
+  function syncPlayedRow() {
+    const switchOnly = state.shelf === "video" && state.platform === "switch2";
+    const row = $("#playedRow");
+    if (row) row.hidden = switchOnly;
+    if (switchOnly) state.played = "all";
   }
 
   function setShelf(next, opts) {
@@ -402,7 +432,7 @@
     const dlg = $("#detail");
     dlg.addEventListener("close", () => {
       const h = location.hash;
-      if (h.startsWith("#game/") || /^#video\/\d/.test(h)) {
+      if (h.startsWith("#game/") || h.startsWith("#video/")) {
         silentHash = true;
         location.hash = state.shelf === "video" ? "#video" : "#board";
         setTimeout(() => { silentHash = false; }, 0);
@@ -452,12 +482,11 @@
   function stats() {
     if (state.shelf === "video") {
       const n = VIDEOGAMES.length;
-      const played = VIDEOGAMES.filter((g) => !g.neverPlayed).length;
+      const played = VIDEOGAMES.filter((g) => g.neverPlayed === false).length;
       const hrs = totalHours(VIDEOGAMES);
       const sw = VIDEOGAMES.filter((g) => g.platform === "switch2").length;
       const items = [[n, n === 1 ? "game" : "games"], [hrs.toLocaleString("en-US"), "hours played"], [played, "played"]];
-      if (sw) items.push([sw, "Switch 2"]);
-      else items.push(["Soon", "Switch 2"]);
+      if (sw) items.push([sw, sw === 1 ? "Switch game" : "Switch games"]);
       $("#heroStats").innerHTML = items.map(([v, l]) => `<div><dt>${l}</dt><dd>${v}</dd></div>`).join("");
       return;
     }
@@ -470,8 +499,8 @@
       const gen = VMETA && (VMETA.generated || (VMETA.stats && VMETA.stats.generated));
       const when = gen ? new Date(gen).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : "November 2026";
       $("#snapshot").textContent = "Data snapshot: " + when + ". Steam library from profile LordScorpy.";
-      $("#footerCredit").innerHTML = "PC games and playtimes come from <a href=\"https://steamcommunity.com/id/LordScorpy/\">Shea's public Steam library</a>. Cover art is served from Steam's public CDN. Store pages link to Steam. Switch 2 games will be added when Shea sends screenshots of his Nintendo library.";
-      $("#footerNote").innerHTML = "How-to-play videos are left off this side of the shelf for now, rather than guessed at. Links marked <span class=\"badge badge--warn\">Not verified</span> could not be confirmed automatically.";
+      $("#footerCredit").innerHTML = "PC games and playtimes come from <a href=\"https://steamcommunity.com/id/LordScorpy/\">Shea's public Steam library</a>. Cover art is served from Steam's public CDN. Store pages link to Steam. Nintendo games were transcribed from Shea's Switch 2 library photos; official titles, cover art, and store pages come from Nintendo.com when a matching product page was found.";
+      $("#footerNote").innerHTML = "A Switch 2 or Switch 1 (playing on Switch 2) tag is shown only when that can be verified. How-to-play videos are left off this side of the shelf for now, rather than guessed at. Links marked <span class=\"badge badge--warn\">Not verified</span> could not be confirmed automatically.";
       $("#footerSmall").textContent = "Not affiliated with Valve, Steam, Nintendo, or any publisher. Cover art © its publishers.";
       return;
     }
@@ -505,8 +534,12 @@
     return VIDEOGAMES.filter((g) => {
       if (words.length && !words.every((w) => g._hay.includes(w))) return false;
       if (state.platform !== "all" && g.platform !== state.platform) return false;
-      if (state.played === "played" && g.neverPlayed) return false;
-      if (state.played === "never" && !g.neverPlayed) return false;
+      if (state.played === "played") {
+        if (g.neverPlayed !== false) return false;
+      }
+      if (state.played === "never") {
+        if (g.neverPlayed !== true) return false;
+      }
       if (state.genre && !(g.genres || []).includes(state.genre)) return false;
       return true;
     });
@@ -519,7 +552,7 @@
     weight: (g) => g.weight,
     rating: (g) => g.bggRating,
     year: (g) => g.year,
-    hours: (g) => g.minutesPlayed || 0,
+    hours: (g) => (g.minutesPlayed == null ? null : g.minutesPlayed),
     recent: (g) => g.lastPlayed || null,
   };
   function sorted(list) {
@@ -558,31 +591,45 @@
       </a></li>`;
   }
   function videoCard(g, i) {
+    const switchGame = isSwitchGame(g);
+    const fmt = formatLabel(g);
+    const family = switchFamilyLabel(g);
     const hrs = hoursParts(g);
-    const hoursBlock = g.neverPlayed
-      ? `<div class="card__players"><span class="lbl">Never played</span></div>`
-      : `<div class="card__players"><span class="num">${esc(hrs.num)}</span><span class="lbl">${esc(hrs.lbl)}</span></div>`;
+    let hoursBlock;
+    if (switchGame && fmt) {
+      const fmtClass = fmt === "Physical" ? "physical" : fmt === "Both" ? "both" : "digital";
+      hoursBlock = `<div class="card__players"><span class="card__format card__format--${fmtClass}">${esc(fmt)}</span></div>`;
+    } else if (g.neverPlayed) {
+      hoursBlock = `<div class="card__players"><span class="lbl">Never played</span></div>`;
+    } else {
+      hoursBlock = `<div class="card__players"><span class="num">${esc(hrs.num)}</span><span class="lbl">${esc(hrs.lbl)}</span></div>`;
+    }
     const last = lastPlayedText(g.lastPlayed);
     const typ = g.type && g.type !== "game" ? `<span class="badge badge--soft">${esc(g.type)}</span>` : "";
     const portrait = esc((g.image && g.image.portrait) || "");
     const header = esc((g.image && g.image.header) || "");
     const capsule = esc((g.image && g.image.capsule) || "");
     const initial = esc(((g.name || "?").trim().charAt(0) || "?").toUpperCase());
+    const platBadge = g.store === "steam" ? "Steam" : (family || "Nintendo");
+    const yearBits = [g.year, family || (switchGame ? null : platformLabel(g.platform))].filter(Boolean).join(" · ");
+    const ariaExtra = switchGame ? (fmt ? fmt : "Nintendo") : hoursLabel(g);
+    const metaBits = [];
+    if (last) metaBits.push(`<span>${ICON.clock}Last played ${esc(last)}</span>`);
+    else if (g.neverPlayed) metaBits.push(`<span>Not launched yet</span>`);
+    else if (family === "Switch 1") metaBits.push(`<span>Playing on Switch 2</span>`);
     return `<li class="card card--video" style="--i:${Math.min(i, 30)};--h:${hue(g.appid || 0)}">
-      <a class="card__btn" href="#video/${g._slug}" aria-label="${esc(g.name)}: ${esc(hoursLabel(g))}">
-        <div class="card__art">
-          <img src="${portrait}" alt="Cover art for ${esc(g.name)}" loading="${i < 8 ? "eager" : "lazy"}" decoding="async" width="200" height="300"
+      <a class="card__btn" href="#video/${g._slug}" aria-label="${esc(g.name)}: ${esc(ariaExtra)}">
+        <div class="card__art${portrait || header || capsule ? "" : " card__art--missing"}">
+          ${portrait || header || capsule ? `<img src="${portrait}" alt="Cover art for ${esc(g.name)}" loading="${i < 8 ? "eager" : "lazy"}" decoding="async" width="200" height="300"
             data-fallback="${header}" data-fallback2="${capsule}"
-            onerror="window.__artFallback&&window.__artFallback(this)">
+            onerror="window.__artFallback&&window.__artFallback(this)">` : ""}
           <div class="card__monogram" aria-hidden="true">${initial}</div>
         </div>
         <div class="card__body">
           <h2 class="card__title">${esc(g.name)}</h2>
-          <span class="card__year"><span>${g.year || ""}${g.year ? " · " : ""}${esc(platformLabel(g.platform))}</span>${typ}<span class="card__platform">${esc(g.store === "steam" ? "Steam" : platformLabel(g.platform))}</span></span>
+          <span class="card__year"><span>${esc(yearBits)}</span>${typ}<span class="card__platform">${esc(platBadge)}</span></span>
           ${hoursBlock}
-          <div class="meta">
-            ${last ? `<span>${ICON.clock}Last played ${esc(last)}</span>` : `<span>${g.neverPlayed ? "Not launched yet" : ""}</span>`}
-          </div>
+          <div class="meta">${metaBits.join("")}</div>
         </div>
       </a></li>`;
   }
@@ -607,6 +654,7 @@
   }
 
   function update() {
+    syncPlayedRow();
     renderChips();
     $("#sortBy").value = state.sort;
     const sd = $("#sortDir"); sd.dataset.dir = state.dir; sd.setAttribute("aria-label", state.dir === "asc" ? "Sort ascending (click for descending)" : "Sort descending (click for ascending)");
@@ -712,24 +760,37 @@
     const last = lastPlayedText(g.lastPlayed);
     const typ = g.type && g.type !== "game" ? g.type : "";
     const madeBy = [ ...(g.developers || []), ...(g.publishers || []).filter((p) => !(g.developers || []).includes(p)) ];
-    const statsDl = [
-      [hoursLabel(g), "played"],
-      [last || "—", "last played"],
-      [g.year || (g.comingSoon ? "Soon" : "—"), "released"],
-      [platformLabel(g.platform), "platform"],
-    ].map(([v, l]) => `<div><dt>${l}</dt><dd>${esc(v)}</dd></div>`).join("");
+    const switchGame = isSwitchGame(g);
+    const family = switchFamilyLabel(g);
+    const fmt = formatLabel(g);
+    const statsDl = (switchGame
+      ? [
+          [fmt || "—", "format"],
+          [family || "—", "version"],
+          [g.year || (g.comingSoon ? "Soon" : "—"), "released"],
+          [family === "Switch 1" ? "Playing on Switch 2" : "Nintendo", "platform"],
+        ]
+      : [
+          [hoursLabel(g), "played"],
+          [last || "—", "last played"],
+          [g.year || (g.comingSoon ? "Soon" : "—"), "released"],
+          [platformLabel(g.platform), "platform"],
+        ]
+    ).map(([v, l]) => `<div><dt>${l}</dt><dd>${esc(v)}</dd></div>`).join("");
     const portrait = esc((g.image && g.image.portrait) || "");
     const header = esc((g.image && g.image.header) || "");
     const capsule = esc((g.image && g.image.capsule) || "");
-    const storeKind = g.store === "steam" ? "Steam" : "Store";
+    const storeKind = g.store === "steam" ? "Steam" : "Nintendo";
+    const kicker = [g.year, family || (switchGame ? "Nintendo" : platformLabel(g.platform)), g.store === "steam" ? "Steam" : null, typ].filter(Boolean).join(" · ");
+    const artSrc = portrait || header || capsule;
     return `
       <header class="d-head d-head--video" style="--h:${hue(g.appid || 0)}">
         <button type="button" class="d-close" aria-label="Close details">${ICON.close}</button>
-        <img src="${portrait}" alt="Cover art for ${esc(g.name)}"
+        ${artSrc ? `<img src="${artSrc}" alt="Cover art for ${esc(g.name)}"
           data-fallback="${header}" data-fallback2="${capsule}"
-          onerror="window.__artFallback&&window.__artFallback(this)">
+          onerror="window.__artFallback&&window.__artFallback(this)">` : `<div class="card__monogram" aria-hidden="true">${esc(((g.name || "?").trim().charAt(0) || "?").toUpperCase())}</div>`}
         <div>
-          <p class="d-kicker">${g.year || ""}${g.year ? " · " : ""}${esc(platformLabel(g.platform))}${g.store === "steam" ? " · Steam" : ""}${typ ? " · " + esc(typ) : ""}</p>
+          <p class="d-kicker">${esc(kicker)}</p>
           <h2 class="d-title" id="dTitle">${esc(g.name)}</h2>
           <p class="d-sub">${madeBy.length ? "by " + esc(madeBy.join(", ")) : ""}</p>
           <dl class="d-stats">${statsDl}</dl>
@@ -768,8 +829,8 @@
     const h = location.hash || "";
     const game = h.match(/^#game\/(\d+)/);
     if (game) return { shelf: "board", boardId: +game[1] };
-    const vid = h.match(/^#video\/(\d+)/);
-    if (vid) return { shelf: "video", videoId: +vid[1] };
+    const vid = h.match(/^#video\/(nsw-[a-z0-9]+|\d+)/i);
+    if (vid) return { shelf: "video", videoId: vid[1] };
     if (h === "#video") return { shelf: "video" };
     if (h === "#board") return { shelf: "board" };
     return {};
@@ -785,9 +846,9 @@
       openDetail(byId.get(parsed.boardId), "board");
       return;
     }
-    if (parsed.videoId && byVideoId.has(parsed.videoId)) {
+    if (parsed.videoId && byVideoId.has(String(parsed.videoId))) {
       if (state.shelf !== "video") setShelf("video", { fromHash: true });
-      openDetail(byVideoId.get(parsed.videoId), "video");
+      openDetail(byVideoId.get(String(parsed.videoId)), "video");
       return;
     }
     if (dlg.open) dlg.close();

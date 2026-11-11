@@ -1,16 +1,20 @@
 {
- "generated": "2026-11-10T20:35-05:00",
- "source": "Steam GetOwnedGames for profile LordScorpy (SteamID 76561197970277783)",
- "note": "Box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. Switch 2 games will be added when Shea sends screenshots. Genres and release years come from the public Steam store appdetails API.",
+ "generated": "2026-11-10T21:42-05:00",
+ "source": "Steam GetOwnedGames for profile LordScorpy (SteamID 76561197970277783); Nintendo Switch library transcribed from Shea's Switch 2 Virtual Game Cards and physical cartridge photos, with official titles, art, years, and store pages from Nintendo.com when a matching product page was found.",
+ "note": "PC box art is hotlinked from Steam's public CDN, with header and capsule fallbacks. Switch box art is hotlinked from Nintendo's official store CDN (assets.nintendo.com) when a matching product page was found; otherwise the card uses a monogram. Store links are included only when the Nintendo.com page was verified. switchFamily is set only when the platform can be verified: switch2 (Switch 2 exclusive), switch2-edition, or switch1 (a Switch 1 game playing on Switch 2). The Legend of Zelda: Ocarina of Time was added at Shea's request; it is not on the VGC screens.",
  "stats": {
-  "generated": "2026-11-10T20:35-05:00",
-  "total": 311,
+  "generated": "2026-11-10T21:42-05:00",
+  "total": 450,
   "pc": 311,
-  "switch2": 0,
+  "switch2": 139,
+  "switchDigital": 112,
+  "switchPhysical": 22,
+  "switchBoth": 5,
+  "switchFamilySwitch2": 6,
   "played": 168,
   "neverPlayed": 143,
-  "withGenres": 300,
-  "withYear": 306,
+  "withGenres": 435,
+  "withYear": 441,
   "totalMinutes": 218988
  },
  "games": [
@@ -9819,6 +9823,4398 @@
     "capsule": "https://cdn.cloudflare.steamstatic.com/steam/apps/837880/capsule_616x353.jpg"
    },
    "storeUrl": "https://store.steampowered.com/app/837880/"
+  },
+  {
+   "id": "nsw-reanimal",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-reanimal",
+   "name": "REANIMAL",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2026,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Go through hell together!",
+   "developers": [],
+   "publishers": [
+    "THQ Nordic"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/372a7c34b0b24a7e857a65e71d5118f0_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000109876/11885e0884bfcb836246ae6badd405415460af20ec56cc168be493c3ea94621a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/reanimal-switch-2/",
+   "format": "Digital",
+   "switchFamily": "switch2"
+  },
+  {
+   "id": "nsw-super-mario-galaxy-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-mario-galaxy-2",
+   "name": "Super Mario Galaxy 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Travel aboard Starship Mario, and team up with Yoshi, to save the galaxy",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f060204b332c48318c9ae39e8c56520c_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000104192/5731782c9e89d2f492b44f1445f5df3d65660cdf75fe4f47a17e2bed7f82f99e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-galaxy-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-runbow",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-runbow",
+   "name": "Runbow",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Are You Ready To Runbow?",
+   "developers": [
+    "13AM Games"
+   ],
+   "publishers": [
+    "Headup Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ce9ba221968a4b29ab4a477ee4c948dc_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002582/52f47758d20fc40c730e9c7907677546f2ef78496dfa7565a467b55b5c90a973",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/runbow-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-ultimate-sheep-raccoon",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-ultimate-sheep-raccoon",
+   "name": "Ultimate Sheep Raccoon",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Racing"
+   ],
+   "type": "game",
+   "shortDescription": "Race to victory through a mayhem-filled obstacle course of deadly traps you’ve built with friends while pulling off sick tricks!\n\nUltimate Sheep Raccoon is a bike-racing party game where you and your friends build a course of ramps, obstacles, and traps! Dodge hazards, do crazy tricks, and use power-ups to get ahead of the competition. Pedal to victory with up to 8 players locally, online, and cross-platform.\n\nBike to victory\nRace to the finish on your bikes! With easy-to-pick-up and intuitive controls, everyone can play.\n\nPower-ups\nStay ahead of the competition with power-ups! Lift off…",
+   "developers": [
+    "Clever Endeavour Games"
+   ],
+   "publishers": [
+    "Clever Endeavour Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/685ed18f3db9471aa72f15053ab9b999_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000096231/30157ec31d818d33f06196ba29a2003a01eae84c344fb63f8a6d1a1c0ae4f49d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/ultimate-sheep-raccoon-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-heave-ho-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-heave-ho-2",
+   "name": "Heave Ho 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2026,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Get a grip, it’s Heave Ho 2! The insane 2-4 player party game sequel takes the couch co-op mayhem online for the first time. Grab what you can and swing to win!",
+   "developers": [
+    "Le Cartel Studio"
+   ],
+   "publishers": [
+    "Devolver Digital"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000113971/6472a4c62f80f523d480a380236ff390e6119e4ae51cb3d4c4d2dbeb889ca7de",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000113971/0af33b33dc76d4ca21beec4a06dbf76a3e6337849d506457809a02eb39659374",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/heave-ho-2-switch-2/",
+   "format": "Digital",
+   "switchFamily": null
+  },
+  {
+   "id": "nsw-bafl",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-bafl",
+   "name": "BAFL - Brakes Are For Losers",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Racing"
+   ],
+   "type": "game",
+   "shortDescription": "BAFL is all about pure arcade fun.",
+   "developers": [],
+   "publishers": [
+    "Plug In Digital"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/53e72c721e4046359e861795506c8881_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003981/7478125db1edba03a02ffd51feca7bb030fc1e3f1e96ea3068f6eb660fc5c5f6",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/bafl-brakes-are-for-losers-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-clusterpuck-99",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-clusterpuck-99",
+   "name": "ClusterPuck 99",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "ClusterPuck 99 is a sporty competitive sports game about sports based on athletics!",
+   "developers": [],
+   "publishers": [
+    "Coatsink Software"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d5e4ce26029949d9a4e9f79dc48de279_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003506/a21e5f178dfb3a60a500822a8e933be69abdb0046d004bd431b121e58c64821b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/clusterpuck-99-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-stikbold-deluxe",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-stikbold-deluxe",
+   "name": "Stikbold! A Dodgeball Adventure DELUXE",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "Stikbold! A Dodgeball Adventure hits right where it hurts!",
+   "developers": [],
+   "publishers": [
+    "Reign Bros"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/eb38a66330f9406c9ed9aa4958244a2a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000004382/dfe329cfacba9a7325edb89c7bfd284e526b8fd1682f43ac4f4dcc7b49cc4715",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/stikbold-a-dodgeball-adventure-deluxe-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-ticket-to-ride",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-ticket-to-ride",
+   "name": "Ticket to Ride",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2024,
+   "comingSoon": false,
+   "genres": [
+    "Strategy",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Build your railway empire!",
+   "developers": [
+    "Marmalade Game Studio Ltd"
+   ],
+   "publishers": [
+    "Marmalade Game Studio"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cd22725694c94d8aa955b35b3e5b045f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000077436/326d4b297eccf8fe878ccd5bf37fa4fb1ccaf580fdd3e40b3c6cca57496bf966",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/ticket-to-ride-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-strikers-battle-league",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-strikers-battle-league",
+   "name": "Mario Strikers: Battle League",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "Tackle, pass, and score in battle soccer with the Mushroom Kingdom gang",
+   "developers": [
+    "Nintendo / Next Level Games"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ac30839cf5ec428e9da44a87d3f78550_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049936/c280b6843af262757f041d2aa3543992ec076b97545abea4dbadda797d9056fc",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-strikers-battle-league-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-catan-console-edition",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-catan-console-edition",
+   "name": "CATAN - Console Edition",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Play the official video game of CATAN! Acquire resources, master new strategies, and build your settlements across a board that comes to life. Challenge your family and friends in your living room, on the move, or play against smart and dynamic AI to become the winning Catanian, then take these skills online with full cross-play compatibility! \n\nCharmed by opportunity and the promise of faraway riches, you and a collection of likeminded adventurers abandon your homeland and livelihoods to discover new lands. After a long and arduous journey, fraught with danger and difficulty, you arrive…",
+   "developers": [],
+   "publishers": [
+    "Dovetail Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/8ef359bed4fe414eb71ff4e1adfe3eb1_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000068417/f75365bce6cbfbf0e1678f1ce87fe8631234b505149e22a93464120bd8f9b98a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/catan-console-edition-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-super-mario-bros-wonder",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-mario-bros-wonder",
+   "name": "Super Mario Bros. Wonder",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Find wonder in the next evolution of Mario fun",
+   "developers": [
+    "Nintendo"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b806e509bb9d463b91b0b2f7cc42fd02_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000068688/87e8aa5f1fdc950b88eae7d7c62ed185c8a6373c845090bbdb2e2cf039b38da1",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+   "format": "Both",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-lets-play-oink-games",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-lets-play-oink-games",
+   "name": "Let’s Play! Oink Games",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Over 1,000,000 copies sold worldwide. The innovative board game brand has come to the Nintendo Switch™!",
+   "developers": [],
+   "publishers": [
+    "Oink Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a551af8624f047fbbc9b6cbcba2789ea_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000042366/6f1a96df616dfe80bd6cb9740394544a653033b6a78b1344792cf988942fd3ff",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/lets-play-oink-games-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-jackbox-11",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-jackbox-11",
+   "name": "The Jackbox Party Pack 11",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "The Pack is back with trivia, writing, drawing, sound and deduction party games!",
+   "developers": [
+    "Jackbox Games, Inc."
+   ],
+   "publishers": [
+    "Jackbox Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f7b3d85c0af24775b44eecad0e25e7e7_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000092964/ecc1ec4f3b7d4f85a5ba646e4bbf2e23945bf70cb6819a84b57b393d7242580d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-11-switch/",
+   "format": "Digital",
+   "switchFamily": null
+  },
+  {
+   "id": "nsw-hollow-knight",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-hollow-knight",
+   "name": "Hollow Knight",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Forge your own path in Hollow Knight! An epic action adventure through a vast, ruined kingdom of insects and heroes.",
+   "developers": [
+    "Team Cherry"
+   ],
+   "publishers": [
+    "Team Cherry"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d6aae7b54581406d84d927795f83eb17_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/hollow-knight-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-knight-squad-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-knight-squad-2",
+   "name": "Knight Squad 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "The most explosive 8 player medieval arcade game!",
+   "developers": [
+    "Chainsawesome Games"
+   ],
+   "publishers": [
+    "Chainsawesome"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ca42898893024c6a9ecf3ed49c4810ff_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000032578/0ab3e4185d6d052c3ca0a8c11f0e2ba338a8ecb637318a537bc283cb2e206540",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/knight-squad-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-party-jamboree-s2e",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-party-jamboree-s2e",
+   "name": "Super Mario Party Jamboree – Nintendo Switch 2 Edition + Jamboree TV",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "This jam-packed jamboree just got even bigger—only on the Nintendo Switch™ 2 system!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000096825/57cee7519c9dda2c37b608ee6e3505f2f948e42ec011f5966f65d4a21b047123",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000096825/1c6d36132c3f96d24ba95ebc60e6cb7534bfe9f81b0b590177adf1cf47d3cc81",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-party-jamboree-nintendo-switch-2-edition-plus-jamboree-tv-switch-2/",
+   "format": "Digital",
+   "switchFamily": "switch2-edition"
+  },
+  {
+   "id": "nsw-persona-5-royal",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-persona-5-royal",
+   "name": "Persona 5 Royal",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Role playing"
+   ],
+   "type": "game",
+   "shortDescription": "Don the mask and join the Phantom Thieves of Hearts as they stage grand heists, infiltrate the minds of the corrupt, and make them change their ways!",
+   "developers": [
+    "Atlus"
+   ],
+   "publishers": [
+    "SEGA"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/edf20681df0a40f3bc77d3364f22498b_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000043147/684bd8b00abcbf6dd122727a27c01a337f667bef825f4f4662efad9854b72fd4",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/persona-5-royal-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-grindstone",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-grindstone",
+   "name": "Grindstone",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Rise. Grind. Repeat.",
+   "developers": [
+    "Capybara Games"
+   ],
+   "publishers": [
+    "CAPY"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f2a4f222df90485dac5acee48e33e88a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000033000/51c0d14ea095c3d76f1dc8970381effdad8451714a406db2219ea13f09097afd",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/grindstone-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-trombone-champ",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-trombone-champ",
+   "name": "Trombone Champ",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Music"
+   ],
+   "type": "game",
+   "shortDescription": "Do you have what it takes to become the Trombone Champ?\n\nTrombone Champ allows you to play over 45 songs, which include anthems, marches, classical pieces, electronic music, folk classics, and more. You can also play with up to four players in local multiplayer mode!\n\nThe game supports multiple control modes, so you can play however you like!\n\nThere's also a hidden story for you to discover! As you play the game, you can find collectible cards and interact with hidden characters, which allow you to unlock new characters, trombones, trombone sounds, and more. Can you unlock all of the…",
+   "developers": [],
+   "publishers": [
+    "Holy Wow Studios"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/bb8c19f7c5c245b2b919012cc3276bb6_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000065994/9f86ca2e88e1daf4c4c0b54b03c3306d2fc47f0162c3f4ccd7f03975264a4bf8",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/trombone-champ-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pvz-replanted",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pvz-replanted",
+   "name": "Plants vs. Zombies: Replanted",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Go back to your roots!",
+   "developers": [
+    "EA"
+   ],
+   "publishers": [
+    "Electronic Arts"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/17a197129ddc44f98d9a31068cbaae0a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000098368/b192bd37698dbead21d4b0ff84a8d5f985a804f93ad767a29f9127bbf7aa904d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/plants-vs-zombies-replanted-switch/",
+   "format": "Digital",
+   "switchFamily": null
+  },
+  {
+   "id": "nsw-monster-train-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-monster-train-2",
+   "name": "Monster Train 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "The classic roguelike deckbuilder returns with new clans, challenges and modes!",
+   "developers": [],
+   "publishers": [
+    "Good Shepherd"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c37a42ff3cbc4212813b8864d1d53f6a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000087394/f3a4c8a7b241848ee36f0a403daea6844d1808da1f28657f2c37b187436d5894",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/monster-train-2-switch/",
+   "format": "Digital",
+   "switchFamily": null
+  },
+  {
+   "id": "nsw-tumblestone",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-tumblestone",
+   "name": "Tumblestone",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Tumblestone completely reinvents the matching genre",
+   "developers": [
+    "The Quantum Astrophysicists Guild"
+   ],
+   "publishers": [
+    "The Quantum Astrophysicists Guild"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b2f5c582363a437c8bcb177988dd63a0_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000872/0b6bc35cc632034c97ae16f8afab3a99ba07aa2c4bff05544e51ac8709ac9234",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/tumblestone-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-donkey-kong-bananza",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-donkey-kong-bananza",
+   "name": "Donkey Kong Bananza",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Explore a vast underground world—by smashing your way through it!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/7642abba40804e84a115e3e36e230bc1_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000096809/3c8219fbdcd3bdd0ebd6239cf32c651fe10f2157aa7730fcc6a7d96cd27460e5",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/donkey-kong-bananza-switch-2/",
+   "format": "Digital",
+   "switchFamily": "switch2"
+  },
+  {
+   "id": "nsw-moving-out",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-moving-out",
+   "name": "Moving Out",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Moving Out is a ridiculous physics-based moving simulator that brings new meaning to \"couch co-op\"!",
+   "developers": [
+    "SMG Studio"
+   ],
+   "publishers": [
+    "Team17"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b4fc1af8c1374ef785a09eb9ea0c4200_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000020400/ae27a33ed8382443f119942e08f8a0c13ee68f755431338b9677ca48857e25ea",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/moving-out-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-boomerang-fu",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-boomerang-fu",
+   "name": "Boomerang Fu",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Slice and dice your friends with boomerangs in this frantic physics party game for up to 6 players.",
+   "developers": [],
+   "publishers": [
+    "Cranky Watermelon"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3efd12d222874ccfb4b8abd1a1d1d3c6_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000021921/93718cd185fc1736665b72d3dfdf111e69ba3e6c8c69989471c6e7e11c90f3f4",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/boomerang-fu-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-hot-shot-burn",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-hot-shot-burn",
+   "name": "Hot Shot Burn",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "Hilariously violent party brawler that lets you compete in the galaxy's ultimate blood sport. Experience crazy couch battles full of ridiculous flukes and insane skill shots.",
+   "developers": [],
+   "publishers": [
+    "Forever Entertainment"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/551106e66a344757ad495474053c3803_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000031963/bbc9d1c34476b4a5791a09770566af5df1418b94c89b399d3657c3886110ddac",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/hot-shot-burn-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-block-party-dx",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-block-party-dx",
+   "name": "Block Party DX!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Welcome to block party puzzle game, offering a relaxing yet challenging experience for all ages.",
+   "developers": [
+    "MAX INTERACTIVE STUDIO"
+   ],
+   "publishers": [
+    "Max Interactive Studio"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f75b12fdd3e9407d9ed8172b458183fe_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000096645/29f9dae88b3ab181d7b2e913e534fca11aa6a79c7e34b032ae4d8b1232fb30ee",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/block-party-dx-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-art-of-balance",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-art-of-balance",
+   "name": "Art of Balance",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Grab your controller and build a balanced stack in this physics-based puzzler!",
+   "developers": [
+    "Shin'en Multimedia"
+   ],
+   "publishers": [
+    "Shin’en Multimedia"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/6b165e07d4224167a021d72a36acf6e4_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002162/5bd7fc0f1fd2f4302257c602f1cc1c44d9d2e3af5f8931655c1ba4f648112fef",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/art-of-balance-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-move-or-die-unleashed",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-move-or-die-unleashed",
+   "name": "Move or Die: Unleashed",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "The Friendship Ruining Game!",
+   "developers": [
+    "Those Awesome Guys"
+   ],
+   "publishers": [
+    "Those Awesome Guys"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c2611ef1110a4f7d9fe752aa1c0b3f9d_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000037467/1d79fc6130b5ded52696506bc5e60c2d9358b2a4fe39590f7d83b49288a2d11b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/move-or-die-unleashed-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-nintendo-switch-sports",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-nintendo-switch-sports",
+   "name": "Nintendo Switch Sports",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "Dunk, swing, kick, spike, and bowl your way to victory in a sports collection that will get the whole family moving",
+   "developers": [
+    "Nintendo"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cfc9434412ae4d0b90c1247e2b9ae5a0_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000049931/282ce6a96d5855d8b46aa9316314969f731a26ef9c7b2bc1e5aebe62dcf2ece2",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/nintendo-switch-sports-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-super-crazy-rhythm-castle",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-crazy-rhythm-castle",
+   "name": "SUPER CRAZY RHYTHM CASTLE",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "It’s Super Crazy Rhythm Castle, the chaotic rhythm adventure! \nA puzzling co-op mashup unlike anything you've ever heard.\nCan you conquer the castle?",
+   "developers": [],
+   "publishers": [
+    "Konami Digital Entertainment GmbH"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a678a72d32df4f5ebda37992e965d49e_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000050218/f002c1001e6679dfa0ba4e98716e3467606ebb3aeb4ff6ca6198eeae601f124b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-crazy-rhythm-castle-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-carcassonne",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-carcassonne",
+   "name": "Carcassonne",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Make your kingdom come alive with meeples, tiles and tactics!",
+   "developers": [],
+   "publishers": [
+    "Twin Sails"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dba9dd2d05ae44dcbf5537dda638a9dc_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000012866/c6ab9ab265ffafea8414c90d5eea4bc59490b32f88eb173cfc00f881052613bc",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/carcassonne-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-overcooked-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-overcooked-2",
+   "name": "Overcooked! 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Overcooked returns with a brand-new helping of chaotic cooking action! Journey back to the Onion Kingdom and assemble your team of chefs in classic couch co-op or online play for up to four players. Hold onto your aprons … it’s time to save the world (again!)",
+   "developers": [],
+   "publishers": [
+    "Team17"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/951117aae76545beade2b86a68c6a38a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003402/057249cf707a2a733c876c0eb453bb018ee6ea09f3aea5c350f4d76f70840d00",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/overcooked-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-unrailed",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-unrailed",
+   "name": "Unrailed!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "BUILD A TRACK FURTHER THAN EVER BEFORE",
+   "developers": [
+    "Indoor Astronaut"
+   ],
+   "publishers": [
+    "Daedalic Entertainment"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1348f354ffa1415b81072d129a7dc6e7_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000029629/30c87c8192e7237dd585fac1c5841fe4969104aa2e9ffd2aa21b7ab3f57b489b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/unrailed-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-hole-io",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-hole-io",
+   "name": "Hole io",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Show who is the biggest black hole in the town!",
+   "developers": [
+    "VOODOO"
+   ],
+   "publishers": [
+    "QubicGames"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/89bc0db8aeb04526a4e66f216dadeedf_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000069917/28c5a57b2711d70dbeb4dd55155691e8135a3069bad3455547392878c0162861",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/hole-io-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-beasties",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-beasties",
+   "name": "Beasties",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle",
+    "Role playing"
+   ],
+   "type": "game",
+   "shortDescription": "Capture and become the master of all the Beasties! In this match-3 game, win your battles in turn-based puzzles!",
+   "developers": [
+    "rokaplay"
+   ],
+   "publishers": [
+    "MAXIMUM ENT FRANCE"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f67418b80ed7432da7eab79e249a2d6f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000051628/84315e7bc91fabca7108e69341324f30cd0bbfb0cb30b4d49f5889becae01c4f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/beasties-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-broforce",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-broforce",
+   "name": "Broforce",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "When evil threatens the world, the world calls on Broforce - an under-funded, over-powered paramilitary organization dealing exclusively in excessive force. Brace your loins with up to four players to run ‘n’ gun as dozens of different bros and eliminate the opposing terrorist forces that threaten our way of life. Unleash scores of unique weapons and set off incredible chain reactions of fire, napalm, and limbs in the name of freedom. \n\nFeatures:\n\nThe Broforce: Deliver your own brand of shock and awe with dozens of bros each with their own unique weaponry and special attacks designed to…",
+   "developers": [
+    "Free Lives"
+   ],
+   "publishers": [
+    "Devolver Digital"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ccf61fe370324e53aa3311116573a962_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000011556/3dd7742421b2e10cc9e640284fa45f7cef5cd51dfaffb38eea7b8b6efa06ea6b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/broforce-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-street-fighter-6",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-street-fighter-6",
+   "name": "Street Fighter 6",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Fighting"
+   ],
+   "type": "game",
+   "shortDescription": "The long-awaited Street Fighter™ 6 is now on Nintendo Switch™ 2!",
+   "developers": [],
+   "publishers": [
+    "CAPCOM"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f7c8afbbd5644a80a857a4d01170a36a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000095203/12d36a4c9bbf43a4babba2f203e1e271ef08de143349e08231dff56fd2bef70e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/street-fighter-6-switch-2/",
+   "format": "Digital",
+   "switchFamily": "switch2"
+  },
+  {
+   "id": "nsw-clubhouse-games",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-clubhouse-games",
+   "name": "Clubhouse Games: 51 Worldwide Classics",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Puzzle",
+    "Racing",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Discover and play 51 tabletop games from around the world!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/7c5b696a18064e9b81ae45536f8630eb_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000029716/6d0cf8758e634a00d201ce0784e48f13c643b1b935f286d82689bf0a56a1f5e6",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/clubhouse-games-51-worldwide-classics-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-fortnite",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-fortnite",
+   "name": "Fortnite",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "Find it in Fortnite.",
+   "developers": [
+    "Epic Games, Inc"
+   ],
+   "publishers": [
+    "Epic Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000010192/57c91b2f6cae53d8773ce18430437a719cf8ad4f700ce35aec3a2aea29a2f831",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000010192/6ae837a472a4f1ddc5ea70307dabe3c51a1cd649b505a00de15d3ae744cd828d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/fortnite-switch/",
+   "format": "Digital",
+   "switchFamily": null
+  },
+  {
+   "id": "nsw-mario-kart-world",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-kart-world",
+   "name": "Mario Kart World",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2025,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Racing"
+   ],
+   "type": "game",
+   "shortDescription": "Ready your wheels for a brand-new Mario Kart game exclusively for the Nintendo Switch™ 2 system—with a world of interconnected courses to race through",
+   "developers": [
+    "Nintendo"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e1def375c7254d669bcd65ff10170151_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000095431/0485f410193ca12f92a2f615ea608bb437540f321bd05e464593c33fefa09bf2",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/",
+   "format": "Digital",
+   "switchFamily": "switch2"
+  },
+  {
+   "id": "nsw-lets-sing-2025",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-lets-sing-2025",
+   "name": "Let's Sing 2025",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2024,
+   "comingSoon": false,
+   "genres": [
+    "Application",
+    "Music"
+   ],
+   "type": "game",
+   "shortDescription": "Let's Sing 2025 brings the ultimate karaoke experience straight to your living room!",
+   "developers": [],
+   "publishers": [
+    "THQ Nordic"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1203fae1c97e47ae8dad908c11ef750c_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000080164/30052dbe3c15a0d0b9585c979fdd96c6f0056fa80ca89c5524b526d7b68fad9a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/lets-sing-2025-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-rabbids-party-of-legends",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-rabbids-party-of-legends",
+   "name": "Rabbids: Party of Legends",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Embark on a legendary journey with the Rabbids in this hilarious party game! Join them on an incredible quest, filled with hilarious moments and colorful characters. Gather with friends and family and enjoy a multitude of ridiculously fun mini-games in the most epic Rabbids party yet.\n\n- Jump into multiplayer with up to four players locally.\n- Build a custom playlist of your favorite mini-games to curate a perfect party night.\n- Customize the difficulty and controls so anyone can get in on the action.\n- Discover a legendary story filled with fun games, hilarious moments, and amazing…",
+   "developers": [],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f3287bce8c2a42be93eeb76384202c5f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000039789/9d70f6cefd1bbac45251ed8b9a33c01b561adad86829646a34546375f5b6d231",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/rabbids-party-of-legends-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-thronebreaker",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-thronebreaker",
+   "name": "Thronebreaker: The Witcher Tales",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Role playing",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Thronebreaker is a single player role-playing game set in the world of The Witcher that combines narrative-driven exploration with unique puzzles and card battle mechanics.\n\nCrafted by the developers responsible for some of the most iconic moments in The Witcher 3: Wild Hunt, the game spins a truly regal tale of Meve, a war-veteran and queen of two Northern Realms — Lyria and Rivia. Facing an imminent Nilfgaardian invasion, Meve is forced to once again enter the warpath and set out on a dark journey of destruction and revenge.",
+   "developers": [],
+   "publishers": [
+    "CD PROJEKT RED"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b393b649684042b1b0d17d44f3994918_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000026350/fb58f6c91611ac64f3d552c75119930cb6bea3ba7c1ff69e49734e0356025e64",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/thronebreaker-the-witcher-tales-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-metroid-dread",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-metroid-dread",
+   "name": "Metroid Dread",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure",
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "Join bounty hunter Samus Aran as she tries to escape a deadly alien world in the critically-acclaimed Metroid Dread",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3c9f3b4920d240dc99226fa5374142ac_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000042924/4f2c683f0196210ec212a2ab8bf6952223c0b88e827b820953407a2ba61c9cb2",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/metroid-dread-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-princess-peach-showtime",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-princess-peach-showtime",
+   "name": "Princess Peach: Showtime!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2024,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Take the stage as Princess Peach to save the theater in this action game",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cb0daa75ad034138939016e2352e1f34_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000005022/45d91d342db7435bf142eb96e9abfe92500b21ec3130228e25b43c57cd580b78",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/princess-peach-showtime-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-uno",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-uno",
+   "name": "UNO",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Step into one of the most beloved card games that we all grew up with! Match cards by color, number, or symbol, play action cards to spice things up, and race against others to empty your hand first. Don’t forget to shout “UNO!” when you’re down to your last card!\n\nPlay locally or online with up to 4 players: Track your progress on global and weekly leaderboards, gain levels, and earn special Medals to show off to your opponents!\n\nChoose from a variety of beloved House Rules: Customize your game with options like Stacking, Jump-In, and the 7-0 cards rules. You can even combine them to…",
+   "developers": [],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5372e8babdbe4625be94283d0918729f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000034088/ac97854c142c719f8ae843106d43511db61822eb9bdb78e2c1a98ea0ae3b6c08",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/uno-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-cytus-alpha",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-cytus-alpha",
+   "name": "Cytus α",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Music"
+   ],
+   "type": "game",
+   "shortDescription": "Cytus α is the definitive edition of Rayark’s (VOEZ, Deemo) global hit, delivering over 200 songs and a memorable rhythm music experience.",
+   "developers": [],
+   "publishers": [
+    "Flyhigh Works"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/46260996614f4040ae0daff27c476676_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000011475/b747f1f986fe4e0490a988dc48048298be58fedfd1fb65b727249be8e5374250",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/cytus-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-taiko-rhythm-festival",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-taiko-rhythm-festival",
+   "name": "Taiko no Tatsujin: Rhythm Festival",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Music",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Play Solo! Play Together! Drum to the beat of your heart with Taiko!",
+   "developers": [],
+   "publishers": [
+    "Bandai Namco Entertainment"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f122f5e01ce14aad83b73a4a7ea85055_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000047561/105d7cd7386ca93a904b492fe7b98a4e00f4c5c9ae41bc30e2b5bb5f541282dc",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/taiko-no-tatsujin-rhythm-festival-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-just-shapes-beats",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-just-shapes-beats",
+   "name": "Just Shapes & Beats",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "A game about shapes, and about beats.",
+   "developers": [
+    "Berzerk Studio"
+   ],
+   "publishers": [
+    "Berzerk Studio"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e98019853ab04fc281f5388ffb2c55bf_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003653/e5cad4cafbd813b89817c25926c1690760a789e206776d70ae601af53b12582e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/just-shapes-and-beats-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-paper-mario-ttyd",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-paper-mario-ttyd",
+   "name": "Paper Mario: The Thousand-Year Door",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2024,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Role playing"
+   ],
+   "type": "game",
+   "shortDescription": "Join Mario on an epic paper-adventure to collect the Crystal Stars before the X-Nauts do!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d03c4d51cd3b4a7c8fcecb3a3905db6f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000072957/fdd5d8ca46d7ea4e45397ae560e807742de2d7d744570297ddbabf69d6d23f33",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/paper-mario-the-thousand-year-door-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-paper-io-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-paper-io-2",
+   "name": "Paper io 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Conquer territory solo or beat your friends in multiplayer mode with up to 8 players!",
+   "developers": [
+    "VOODOO"
+   ],
+   "publishers": [
+    "QubicGames"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/9bf3da0873af46eba8e70c3ea3a112fc_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000068359/73341197ab2f46b0b68c46bd610bcd65ba490045423c918e4a9f199cd7584e20",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/paper-io-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-kart-8-deluxe",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-kart-8-deluxe",
+   "name": "Mario Kart 8 Deluxe",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Racing"
+   ],
+   "type": "game",
+   "shortDescription": "Race with Mario and friends anytime, anywhere!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b0206a8aba7d4b30ae6a1da26736a013_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000153/de697f487a36d802dd9a5ff0341f717c8486221f2f1219b675af37aca63bc453",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-animal-crossing-nh",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-animal-crossing-nh",
+   "name": "Animal Crossing: New Horizons",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "Escape to Your Personal Island Paradise",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c52f22a9b96f46df91f1a60482ac02e6_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+   "format": "Both",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-smash-ultimate",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-smash-ultimate",
+   "name": "Super Smash Bros. Ultimate",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Fighting",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "New characters and stages join the entire legacy roster!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/67e9794abb1d43eda8f96f07c4612ece_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000012332/ac4d1fc9824876ce756406f0525d50c57ded4b2a666f6dfe40a6ac5c3563fad9",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-smash-bros-ultimate-switch/",
+   "format": "Both",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-rabbids-sparks",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-rabbids-sparks",
+   "name": "MARIO + RABBIDS SPARKS OF HOPE",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Adventure",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests!\n\n•Build your dream team with three heroes from an eclectic roster of nine.\n•Take down all new bosses, along with some familiar enemies throughout the galaxy. \n•Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. \n•Unleash your heroes' skills but be strategic as you dash…",
+   "developers": [],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5764317d6d6e4b7ca80be4ba62a6d322_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000035797/f3dc6aa2e25ab6d713ac5da17e90ce676dfadf6a0b8fefb37b8b5159d89fc36c",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-plus-rabbids-sparks-of-hope-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-fall-guys",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-fall-guys",
+   "name": "Fall Guys",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Fall Guys is a free, cross-platform massively multiplayer party royale game. Clumsily compete in absurd obstacle courses with friends or build your very own chaotic course to share with the community.",
+   "developers": [],
+   "publishers": [
+    "Epic Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ad777b5b340b4901918e88537c572577_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000042975/937afd0c84319831009b44c93369faf0a2c926a454809f73523df9bfb6cf6233",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/fall-guys-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-warioware-get-it-together",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-warioware-get-it-together",
+   "name": "WarioWare: Get It Together!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Welcome to microgame mayhem!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b554755cdd514c72915cb23a63b54921_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000042929/b572221a658515d2bf2c10961c049727eb147a75290b7a134d4d659f86dc6912",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/warioware-get-it-together-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-ultimate-chicken-horse",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-ultimate-chicken-horse",
+   "name": "Ultimate Chicken Horse",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Build-As-You-Play Party Platformer!",
+   "developers": [
+    "Clever Endeavour Games"
+   ],
+   "publishers": [
+    "Clever Endeavour Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/93b03895526c428baaf47a1dd594f68d_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002401/0beb41e342fc129c51b54cd9075c212ed208bdce61a15ac54dd7dc7e3426e118",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/ultimate-chicken-horse-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pokemon-unite",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pokemon-unite",
+   "name": "Pokémon UNITE",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Pokémon UNITE will end service on 3/22/2027 at 5PM PT. For more information, please visit the official website.",
+   "developers": [],
+   "publishers": [
+    "The Pokémon Company"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/bad2d03c3bc04b99b823355d1c8779de_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000043292/91e382e3e87726746dc714d3cab616a57ead6d797cff8c2f757b448534ce7cf4",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pokemon-unite-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-tennis-1920s",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-tennis-1920s",
+   "name": "Tennis 1920s",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "Tennis 1920s is a realistic tennis game featuring tactical gameplay across a variety of incredible, life-like locations – all set in the roaring ’20s!",
+   "developers": [
+    "Helium9 Games"
+   ],
+   "publishers": [
+    "Helium9 Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/25d1883c85b14247908e2cddeb66c79a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000024099/4f7b676b37430f205020f9859effc45397cacb73a751e55436ece9566c62056c",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/tennis-1920s-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-heave-ho",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-heave-ho",
+   "name": "Heave Ho",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Heave Ho is a riotous multiplayer party game for up to four players in couch co-op and versus play. Reach out, get a grip, and swing to victory — or meet your messy end!\n\nReach out\nCan your team of up to four players swing to victory? It’s all or nothing — the slightest slip sends your fellow Heavers to their technicolor deaths in the void or on the spikes. It’s a fast-track to ruined friendships.\n\nGet a grip\nIt’s simple — grab pals and platforms with your hands, form a wobbly chain, and swing across increasingly devilish maps without letting go or missing your mark. I mean, how hard can…",
+   "developers": [
+    "Le Cartel Studio"
+   ],
+   "publishers": [
+    "Devolver Digital"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/72bf46322be74df1bb8cd99e5e9a39eb_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000019634/7b7d6751faa9a2f0c6dbe5c63f1967142eddbb5f291d176ab4c1b8418d73ddf6",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/heave-ho-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-capcom-arcade-stadium",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-capcom-arcade-stadium",
+   "name": "Capcom Arcade Stadium",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "Relive the Capcom classics!\n1943 -The Battle of Midway-\ncomes as a free download!",
+   "developers": [],
+   "publishers": [
+    "CAPCOM"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/29ec917dd1e04f84b235a1b8a72daef8_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000034733/c90561f0827ef4c479d47e58028c4120093be27d22f8b6d02455c1a74d96ae59",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/capcom-arcade-stadium-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-3d-world-bowser",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-3d-world-bowser",
+   "name": "Super Mario 3D World + Bowser’s Fury",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Power up, team up, one up to save the Sprixie Kingdom!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dae60d6d49204d4ba2fd75c9e4908aa9_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000034439/ccb69a8bf2746b2dc0a9b11a9e48c9893baa1631486326f0d681b7a36385221f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-3d-world-plus-bowsers-fury-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-wheel-of-fortune",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-wheel-of-fortune",
+   "name": "Wheel of Fortune",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Puzzle",
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "Play as a contestant on Wheel of Fortune®, America's favorite TV show, anytime, anywhere! Spin the wheel and put your brain to the test against thousands of unique puzzles. Play solo or challenge players online. Enjoy an authentic TV-show experience with Wheel of Fortune®. Spin the wheel, win special wedges, and experience true-to-the-TV-show rules. Win iconic in-game prizes such as luxurious trips, cars, and up to one million dollars. \n\nEnjoy Classic mode for the original experience, or Quick mode to solve only one puzzle when time is short. Unlock items and personalize your game by…",
+   "developers": [],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/134f37cd7e7e40b7b20b8e7cfc327490_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000010066/529133f9f52ff1874e16c0dbe0ef5ce377d6114cad7ac2e876ff6ac28040b508",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/wheel-of-fortune-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-lets-sing-2024",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-lets-sing-2024",
+   "name": "Let's Sing 2024",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Application",
+    "Music",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "Step into the spotlight. | It's your time to shine!",
+   "developers": [
+    "Plaion"
+   ],
+   "publishers": [
+    "THQ Nordic"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/04996461f29147ec9e7414739e07e918_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000053714/84104ffd412f02114210b6b1ec85e894fc9ed0c6fac6c58ca9494b1a1a5cf20e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/lets-sing-2024-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-among-us",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-among-us",
+   "name": "Among Us",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "An online and local party game of teamwork and betrayal for 4-15 players...in space!",
+   "developers": [
+    "Innersloth LLC"
+   ],
+   "publishers": [
+    "Innersloth"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/26c072f6d77c4cddaeae8e38d9062330_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000036098/758ab0b61205081da2466386940752c70e0e5ea43bd39e8b9b13eaa455c69b7e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/among-us-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-all-star-fruit-racing",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-all-star-fruit-racing",
+   "name": "All-Star Fruit Racing",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Racing"
+   ],
+   "type": "game",
+   "shortDescription": "Go bananas for a jaw-dropping, lightning-fast kart racer for all ages and abilities!",
+   "developers": [
+    "3DClouds.it"
+   ],
+   "publishers": [
+    "3DClouds"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c8fa0a221a994f4496c416640917ba98_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000009239/051fb8fb13a7c8519542f09c49b70e35c41024d192c9670f0f343a1460b50fb4",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/all-star-fruit-racing-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pokemon-sword",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pokemon-sword",
+   "name": "Pokémon Sword",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Role playing",
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "Get ready for the next Pokémon adventure in the Pokémon™ Sword and Pokémon™ Shield games.",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/61a9bea686fe4477afb671df5681d16f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000004496/1a7e765fe91da863330208620c5446908cc7ae47108a80a168ff65356df764db",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pokemon-sword-switch/",
+   "format": "Both",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-deltarune-ch12",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-deltarune-ch12",
+   "name": "Deltarune Chapter 1&2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": null,
+   "comingSoon": false,
+   "genres": [],
+   "type": "game",
+   "shortDescription": "",
+   "developers": [],
+   "publishers": [],
+   "image": {
+    "portrait": null,
+    "header": null,
+    "capsule": null
+   },
+   "storeUrl": null,
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-galak-z",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-galak-z",
+   "name": "GALAK-Z: The Dimensional",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": null,
+   "comingSoon": false,
+   "genres": [],
+   "type": "game",
+   "shortDescription": "",
+   "developers": [],
+   "publishers": [],
+   "image": {
+    "portrait": null,
+    "header": null,
+    "capsule": null
+   },
+   "storeUrl": null,
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-asphalt",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-asphalt",
+   "name": "Asphalt Legends",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Racing",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "Fuel your competitive spirit with Asphalt Legends!",
+   "developers": [
+    "Gameloft"
+   ],
+   "publishers": [
+    "Gameloft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f3d29c51a32e490c8236a5e6f34225b6_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000014952/a5e070e4a1d1522305c000c92f9bb5bdb96ad2e41ad014e0a942d3faee8f977d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/asphalt-legends-switch/",
+   "format": "Digital",
+   "switchFamily": null
+  },
+  {
+   "id": "nsw-namco-museum",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-namco-museum",
+   "name": "NAMCO MUSEUM",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Role playing",
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "Play some of the most popular Namco games, anytime, anywhere!",
+   "developers": [],
+   "publishers": [
+    "Bandai Namco Entertainment"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dc115d38e10340ca85ecf575d7d4ea96_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000722/bb6e157ff8fd4dd1aaef983d710534df3d5abdbbf151f1144f486958518e0a86",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/namco-museum-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-four-kings-casino",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-four-kings-casino",
+   "name": "The Four Kings Casino and Slots",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "The Four Kings Casino & Slots is a social MMO that allows you to immerse yourself in a simulated casino experience. You will start off by creating a personalized 3D avatar that represents you in the online world. As you play, you will be rewarded with more extravagant and prestigious clothing to further customize your look. As soon as you enter the casino you will be able to participate in the most popular casino games like Texas Hold’em Poker, Slots, Blackjack, Roulette, Video Poker, and more. The Four Kings Casino & Slots is a living, breathing world that is constantly evolving with new…",
+   "developers": [
+    "Digital Leisure Inc."
+   ],
+   "publishers": [
+    "Digital Leisure"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/2a82fe9d7c1c4684a48b8dcde803b3da_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000016203/456ae06c8be94f550cbaca9b74a45f8e117469f532d9a8c91a96f16421034b4a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-four-kings-casino-and-slots-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-angry-bunnies",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-angry-bunnies",
+   "name": "Angry Bunnies: Colossal Carrot Crusade",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Welcome to Free-To-play, challenging, physics-based demolition game with addictive gameplay.",
+   "developers": [
+    "© 2019 Cypronia"
+   ],
+   "publishers": [
+    "Cypronia"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b03801ede6e54b8394a8265729bf66fe_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000016164/b2ea09c755bd50d3831f30b0692fd1c5a6a4bcde2d118035f8dc91e85be19a6d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/angry-bunnies-colossal-carrot-crusade-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pinball-arcade",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pinball-arcade",
+   "name": "The Pinball Arcade",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Pinball"
+   ],
+   "type": "game",
+   "shortDescription": "Pinball Arcade is the most realistic and comprehensive pinball simulation ever created!\n\nPlay digital versions of over 35 real pinball tables including Mary Shelley's Frankenstein™, Ghostbusters™ Premium, Star Trek™ Vengeance Premium, Mustang® Premium \"Boss\", Doctor Who Master of Time, Wipeout™, and Tee'd Off™!",
+   "developers": [
+    "FarSight Studios, Inc."
+   ],
+   "publishers": [
+    "FarSight Studios"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ca56a5c6d85b4cf4b902d8ad744a95f3_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000004162/d2acff31fc7f2fad6738f8c16ede5c5845082dc4a681c410254d23dd8aa5094c",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-pinball-arcade-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-brawlhalla",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-brawlhalla",
+   "name": "Brawlhalla",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Come fight for glory in Brawlhalla® – an epic platform fighter for up to 8 players online or locally. Try casual free-for-alls, ranked matches, or invite friends to a private room. And it's free! Play cross-platform with millions of players! Frequent updates. Over fifty Legends.\nJoin the eternal battle arena, where the greatest warriors in history brawl to prove who's the best! \n\nFeaturing both online and local competition as well as single-player and co-op modes. With nine free-to-play characters rotating every week, you can also play online to earn gold and unlock more Legends. 100% free…",
+   "developers": [],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/8de409eefeb847b99e34162217dd0d7e_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000012098/cf2a93e484a86e7e255ff4b708be5c82fa04168f80322c5ef5823fec78b6c7a7",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/brawlhalla-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-jump-rope-challenge",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-jump-rope-challenge",
+   "name": "Jump Rope Challenge",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Application",
+    "Training"
+   ],
+   "type": "game",
+   "shortDescription": "Grab those Joy-Con controllers and get jumping!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a62b2ca572b945a4b0043a0580ba4878_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000032653/e4fa2626512b52774b9cfc912dad6d40dbe7a168c5a83df1d2a675383065d2b3",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/jump-rope-challenge-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pokemon-cafe-remix",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pokemon-cafe-remix",
+   "name": "Pokémon Café ReMix",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Solve puzzles to run your own café and collect adorable Pokémon™ helpers",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/49b07473277f44b6a4f414a7a91323db_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000032445/4087e85039ab47d6be6cc8fe2fb3c5806afd657d224559e5be410ee70a6c6128",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pokemon-cafe-remix-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-island-saver",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-island-saver",
+   "name": "Island Saver",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Are you a Savvy Saver?\nBlast the trash and save the islands!\nHelp save the Savvy Islands!",
+   "developers": [
+    "Stormcloud Games Limited"
+   ],
+   "publishers": [
+    "National Westminster Bank"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/aa59185e26fc4c1396478c1912bef83b_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000024623/10e93a334b4392b2e05dc12c4bfbbee6bc454dcc3bfd337b76671c32b30c6e84",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/island-saver-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pokemon-quest",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pokemon-quest",
+   "name": "Pokémon Quest",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Role playing",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Welcome to Tumblecube Island,\nwhere Pokémon™ have turned into cubes?",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/41b11a06044e4528b8b9314e26a277a1_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003482/e454db552d131ea92dfc6da245a50abca6c1cfbd15cc8cf64f3f725e790e0a6a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pokemon-quest-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-ninjala",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-ninjala",
+   "name": "Ninjala",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "An online action battle game featuring ninja and gum! \nAssume the role of a modern-day ninja and take part in the Ninjala tournament!",
+   "developers": [],
+   "publishers": [
+    "GungHo Online Entertainment"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c60754ffebdd4ee6a6685297897d9aa3_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002743/2c6d9f6dada90aa3dfe34279e5faba9a500e30cc49e495f7d8c2ff7d90428ca3",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/ninjala-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-what-the-golf",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-what-the-golf",
+   "name": "WHAT THE GOLF?",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "For people who hate golf - made by people who know nothing about golf.",
+   "developers": [
+    "Triband"
+   ],
+   "publishers": [
+    "Triband"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/74695da28bc14ce3a75c1fdd1634dce4_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000022226/fbfb38663e561430b373162c07669ef2210f02dfab58179fa04c858bbe7efcc1",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/what-the-golf-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pocket-mini-golf",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pocket-mini-golf",
+   "name": "Pocket Mini Golf",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2020,
+   "comingSoon": false,
+   "genres": [
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "It’s time for some fun mini-golf! Sit back, relax, and score some holes. Fancy some multiplayer with friends? We've got you covered - up to 4 players on one console!",
+   "developers": [
+    "Vivid Games S.A."
+   ],
+   "publishers": [
+    "QubicGames"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/485abedd7a11403f9651dd96e99cec07_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000027666/1e9020b4d91c690711a3ac72867b0abcaf12349df571d04c397efc2e8ef4987f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pocket-mini-golf-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-letter-quest-remastered",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-letter-quest-remastered",
+   "name": "Letter Quest Remastered",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "The grim reapers Grimm and Rose need your help to defeat a legion of monsters, ghosts, and evil bunnies using the power of words!\n\nSpell words to battle monsters and earn gems that can be used to purchase upgrades, books, special items, potions, and much more! Letter Quest is a turn-based RPG featuring high-res artwork, clever wordplay, and two great soundtracks. Use your linguistic skills to survive!\n\nDemolish your foes with tons of upgrades, weapons, books, and more!\nJourney through a land filled with 40 stages, each playable in 4 different ways!\nUse your vocabulary to help our heroes…",
+   "developers": [],
+   "publishers": [
+    "Digerati"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/74c69cd8fb9b45a8a1f1fad1ae8dd861_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001888/31ae48b4c0ae7fa80921c5333e577f5d2e94f907b35dc6f53d1bb80262cbf174",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/letter-quest-remastered-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-moving-out-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-moving-out-2",
+   "name": "Moving Out 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Moving Out 2 is the wacky sequel to the world-famous physics-based moving simulator.",
+   "developers": [
+    "SMG Studios + DevM Games"
+   ],
+   "publishers": [
+    "Team17"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/6e9ea8940da44dd0976139e2e734aed5_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000052933/ca4daae0eaae22b18cefda3e0ca948516794309d5a885b650671d9ec1987843d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/moving-out-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-otttd",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-otttd",
+   "name": "OTTTD: Over The Top Tower Defense",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "• A Tower Defense/RTS game with RPG elements\n• From the team behind Death Squared & Super One More Jump",
+   "developers": [
+    "SMG Studio"
+   ],
+   "publishers": [
+    "SMG Studio"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/fd0b4272c2764ca292f2e751c35fb838_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001550/cd2d2f0c8d30be4dcdc379bfcd8aec8b4fb8d32d29d0f781afd5073efda851bc",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/otttd-over-the-top-tower-defense-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-death-squared",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-death-squared",
+   "name": "Death Squared",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "A puzzle game about cooperation, best enjoyed with friends. Updated with new levels, game modes, color-blind options and more!",
+   "developers": [
+    "SMG Studio"
+   ],
+   "publishers": [
+    "SMG Studio"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f7fa4281e3e14ae0b8fa3dd3743864c7_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000767/86c5e15ed2397dcf6330b91cf7c1859147df0fc9ed5858af1f1888e67c2c2c94",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/death-squared-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-conduct-together",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-conduct-together",
+   "name": "Conduct TOGETHER!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Puzzle",
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "A Game of Explosive Railroad Action",
+   "developers": [
+    "Northplay"
+   ],
+   "publishers": [
+    "Northplay"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/eecb57e560b0456b8b78fdc54b31cde6_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000015189/c68bcbf1ba8f197d64ef47b5fa5fc850fbfb5da394f8e9982fbccb0feab9e9b9",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/conduct-together-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-runner3",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-runner3",
+   "name": "Runner3",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "CommanderVideo is back!",
+   "developers": [
+    "Choice Provisions"
+   ],
+   "publishers": [
+    "Gaijin Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/2f740dc2ca994a6d843da9e7d3b81a9c_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003124/6b1d2aca46ed0ed8d3eb5a42ed2184883cd01aa6c22df9d842a0c64e44bf3588",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/runner3-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-super-kirby-clash",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-kirby-clash",
+   "name": "Super Kirby Clash",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Power through bosses on a team of four!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/bbcade3c27884597acfe8d5667536ffc_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000022951/200c9f06d0b25887bdd68fd8ab2a8b9dc5830f46036a8c52146763341c89ba1e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-kirby-clash-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-marvel-ua3",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-marvel-ua3",
+   "name": "MARVEL ULTIMATE ALLIANCE 3: The Black Order",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Assemble your ultimate team of Marvel Super Heroes",
+   "developers": [
+    "KOEI TECMO GAMES CO., LTD."
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/07751f86ef4b4b8ebbac1fd74a274153_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000010079/a746d6ebc71bd10eb74ded9afb4ac96b8a795268e9ad47bda982c82190404b0a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/marvel-ultimate-alliance-3-the-black-order-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-minecraft",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-minecraft",
+   "name": "Minecraft",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "Create, explore and survive alone or with friends.",
+   "developers": [],
+   "publishers": [
+    "Mojang"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/47ccf7b7e8a649e891d40c7bda5bfc53_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/minecraft-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-slay-the-spire",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-slay-the-spire",
+   "name": "Slay the Spire",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Role playing",
+    "Strategy",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "We fused card games and roguelikes together to make the best single player deckbuilder we could. Craft a unique deck, encounter bizarre creatures, discover relics of immense power, and Slay the Spire!\n\nFeatures:\n\n- Dynamic Deck Building: Choose your cards wisely! Discover hundreds of cards to add to your deck with each attempt at climbing the Spire. Select cards that work together to efficiently dispatch foes and reach the top\n- An Ever-changing Spire: Whenever you embark on a journey up the Spire, the layout differs each time. Choose a risky or safe path, face different enemies, choose…",
+   "developers": [
+    "Mega Crit"
+   ],
+   "publishers": [
+    "Balor Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/7940af948bd045588c7fbff208495401_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000012389/6d1d0c45eef34e20f352bd2222e036b619fa382f47385f2a8f80c137a523533e",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/slay-the-spire-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-nsmbud",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-nsmbud",
+   "name": "New Super Mario Bros. U Deluxe",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Two Super Mario Bros. games in one, for double the fun!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/9a5463650c744b78aba06f6f46b5e2c7_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000006411/73d58198e35bf94be752cf3d9ba0b44dea877cab1487e2cc1b7eeb02157f066f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/new-super-mario-bros-u-deluxe-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-sparkle-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-sparkle-2",
+   "name": "Sparkle 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "A superbly polished marble shooter action puzzle game!",
+   "developers": [
+    "10tons Ltd"
+   ],
+   "publishers": [
+    "10tons"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a7d0405c275240568cc3cde027ef74de_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001046/872fa014682be3def5a3063b0439d89a4ce530044b8724f633b64f34a3baccdb",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/sparkle-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-sparkle-unleashed",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-sparkle-unleashed",
+   "name": "Sparkle Unleashed",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Can you carve a path of light through the darkness?",
+   "developers": [
+    "10tons Ltd"
+   ],
+   "publishers": [
+    "10tons"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/458ab6dc923a4c95898154d82b78d3bb_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000004353/3668bf9425769d2ae26f09ff840008072fab1ef0f72f7c1493ff944f10ea2234",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/sparkle-unleashed-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-wargroove",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-wargroove",
+   "name": "Wargroove",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Role playing",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "A modern return to retro turn-based tactics!",
+   "developers": [
+    "Chucklefish"
+   ],
+   "publishers": [
+    "Chucklefish"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1ade6f34a3ce4fb0bbfeb4f16c668815_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000016646/2adb5c6b83a1fb8855588d09c003f27d1a5c77e2089d65bdd16d714ffa0e2f4a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/wargroove-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-dxm-prototype-missions",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-dxm-prototype-missions",
+   "name": "Daemon X Machina: Prototype Missions",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": null,
+   "comingSoon": false,
+   "genres": [],
+   "type": "game",
+   "shortDescription": "",
+   "developers": [],
+   "publishers": [],
+   "image": {
+    "portrait": null,
+    "header": null,
+    "capsule": null
+   },
+   "storeUrl": null,
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-astro-bears-party",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-astro-bears-party",
+   "name": "Astro Bears Party",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "A competitive party game featuring bears in space suits.",
+   "developers": [
+    "QubicGames S.A."
+   ],
+   "publishers": [
+    "SONKA"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/610c53ef6def4fc3b91acf01406aad8d_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001607/997c8afb3d190fcc1147032b3e5b5d75dd410e762fece4a3b9e984ca206d8f6c",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/astro-bears-party-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-guacamelee-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-guacamelee-2",
+   "name": "Guacamelee! 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Role playing"
+   ],
+   "type": "game",
+   "shortDescription": "Juan saved the world once -- but this time, the entire Mexiverse is at stake!",
+   "developers": [
+    "Drinkbox Studios"
+   ],
+   "publishers": [
+    "DrinkBox Studios"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b47450fa0b73475293af68359e4a788a_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000886/fb29a0e897728f68a35b6649181a9ea66be0ca029d90940124a6165ab3a250ec",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/guacamelee-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-paw-patrol-on-a-roll",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-paw-patrol-on-a-roll",
+   "name": "PAW Patrol: On a Roll!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "PAW Patrol is on a roll!\nNo job is too big, no pup is too small! The PAW Patrol is ready to save the day in Adventure Bay on 16 exciting rescue missions, but they can only do it with your help! Help each pup use their unique abilities to rescue friends and keep their community safe. Jump into eight awesome Adventure Bay locations, including Farmer Yumi’s Farm, Jake’s Mountain, a desert canyon, under the waves, and more! Get ready for fun puzzle-platforming action that is PAWfect for kids of all ages with all the pups of the PAW Patrol! \n\nFeatures \n• Ryder and all eight PAW Patrol pups,…",
+   "developers": [
+    "Torus Games"
+   ],
+   "publishers": [
+    "Outright Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3675e5c5e513480d9e14ddbd50090516_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001225/6081151350202eb81d5da7927493bc4c7182c01b976074d91656d4f83f046cac",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/paw-patrol-on-a-roll-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mega-man-11",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mega-man-11",
+   "name": "Mega Man 11",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Mega Man jumps into battle once again!",
+   "developers": [
+    "CAPCOM"
+   ],
+   "publishers": [
+    "CAPCOM"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/18b1493313cf433c9c3383436af1ada7_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003964/50637ae3b8fe8d88c7617d9fa10f8a13ddad1c3e3066d4342f286771c6403c5f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mega-man-11-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pixeljunk-monsters",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pixeljunk-monsters",
+   "name": "PixelJunk Monsters 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Get ready to defend your Chibis again in this fun and addictive tower defense game for all the family!",
+   "developers": [
+    "Q-Games"
+   ],
+   "publishers": [
+    "Spike Chunsoft US"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c027c63837744d10ba818474af801661_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000008846/bf724dd6720faf40a875d058aa313ff32c76203dd3054eefa4fb37d3a61f32a2",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pixeljunk-monsters-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-jackbox-4",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-jackbox-4",
+   "name": "The Jackbox Party Pack 4",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Party"
+   ],
+   "type": "game",
+   "shortDescription": "The biggest and fourthiest addition to this storied party game franchise features not five but FIVE AND A HALF crowd-slaying games!\n\nThe blanking fun sequel Fibbage 3 (2-8 players). Play all-new question types and the game mode Fibbage: Enough About You (3-8 players). Guess the weird facts about your friends.\n\nThe web-based frame game Survive the Internet (3-8 players). Twist your friends’ “online” comments in hilarious ways.\n\nThe spooky date-a-thon Monster Seeking Monster (3-7 players). Message and date fellow monsters with special powers.\n\nThe deranged debate match Bracketeering (3-16…",
+   "developers": [
+    "Jackbox Games, Inc."
+   ],
+   "publishers": [
+    "Jackbox Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1032b4e6f5a44efaa28260152b25d3f9_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000679/a7e4b1ef33918e5102cbb2327ac6960f58524e798a347227e6cc4510ddfbddc1",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-4-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-steamworld-dig-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-steamworld-dig-2",
+   "name": "SteamWorld Dig 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Adventure waits below the surface...",
+   "developers": [
+    "Image & Form International AB"
+   ],
+   "publishers": [
+    "Thunderful"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/006085faaf4c4e2ab757e9d83363d330_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002088/831eae52e8112850682f9596fb2defc2c51c6f1b01030780ca6c5d2d88fe1aa3",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/steamworld-dig-2-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-snipperclips",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-snipperclips",
+   "name": "Snipperclips – Cut it out, together!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Laugh-out-loud couch co-op,\nany way you cut it!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/72291b4d19bb4ad4bccc25920083e75f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000142/b692e801076e7a4be1a87a2135d20bc5414b639de0cf1e44e91d67a6ca9f7229",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/snipperclips-cut-it-out-together-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pinball-fx3",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pinball-fx3",
+   "name": "Pinball FX3",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Pinball"
+   ],
+   "type": "game",
+   "shortDescription": "Williams™ Pinball classics are now available -- and Fish Tales™ is yours for FREE! Zen is proud to bring these amazing games to players around the world. Enjoy!\n\nPinball FX3 is the BIGGEST, most COMMUNITY focused pinball game ever created. Multiplayer matchups, user generated tournaments and league play create endless opportunity for pinball competition.\n\n• Not so hot with the flippers? Pinball FX3 features new single player modes that will help you become a better player!\n• All tables have received graphics updates including real-time lighting and shadow projection.\n• All tables feature…",
+   "developers": [
+    "Zen Studios"
+   ],
+   "publishers": [
+    "Zen Studios"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1c86d56cdc8946ff88b34f06367981d0_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000456/18f624415aba993124a6003998b7ba8b20e7761e59abe48517b6628d533840e6",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pinball-fx3-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-worms-wmd",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-worms-wmd",
+   "name": "Worms W.M.D",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "INCOMING! Worms W.M.D Explodes onto Nintendo Switch™!",
+   "developers": [
+    "Team17 Digital Ltd"
+   ],
+   "publishers": [
+    "Team17"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/7540e19d190c4e25ad8b3c3db6768f8e_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001330/fcb8314854b0071463f674a575c0a44318554de81f6bbdad6332bf10bb524edc",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/worms-w-m-d-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-sonic-mania",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-sonic-mania",
+   "name": "Sonic Mania",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "The Ultimate Celebration of Past and Future",
+   "developers": [
+    "Christian Whitehead"
+   ],
+   "publishers": [
+    "SEGA"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0e3bdfeeee804619bab0cdc1917f6d00_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000809/2292c70c99e9a181e9e3a60f42961da13a9e80e5178954bb8c42f5ffda379849",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/sonic-mania-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-botw",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-botw",
+   "name": "The Legend of Zelda: Breath of the Wild",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "STEP INTO A WORLD OF ADVENTURE",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e43a067ac0de40fb8b555ae5070d7417_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/",
+   "format": "Both",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-shantae-pirates-curse",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-shantae-pirates-curse",
+   "name": "Shantae and the Pirate's Curse",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Avast, mateys! Set sail for swashbuckling fun as Shantae protects Sequin Land from a sinister curse!",
+   "developers": [
+    "WayForward"
+   ],
+   "publishers": [
+    "WayForward"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f130553d76844967a4becaf014771d19_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000008545/13eab61b97be0d7032f1065f07a4402d1bb5b283dc65e1b1fcbb85d45ab07341",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/shantae-and-the-pirates-curse-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-wonder-boy-dragons-trap",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-wonder-boy-dragons-trap",
+   "name": "Wonder Boy: The Dragon's Trap",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Boasting beautiful, hand-drawn animations and a re-orchestrated soundtrack, the cult classic returns with a unique blend of exploration, action, and adventure!",
+   "developers": [],
+   "publishers": [
+    "Dotemu"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/6b4ff38c66404e1cb4ffa9b283a340f5_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000205/4e8376b37b6ea32e5ef27a7e72844afac91432cc782a6adb866a3ead0e084040",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/wonder-boy-the-dragons-trap-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mr-shifty",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mr-shifty",
+   "name": "Mr. Shifty",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Shift through bullets, and master lightning-fast takedowns.",
+   "developers": [],
+   "publishers": [
+    "tinyBuild Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/34016179cfe1469a85b6dd9b8da480c8_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000343/c9dff86466f8c31a991547657576a2f71c8d2dc691e5197d6ed5b98a81500465",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mr-shifty-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-shovel-knight-tt",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-shovel-knight-tt",
+   "name": "Shovel Knight: Treasure Trove",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Shovel Knight: Treasure Trove is the full and complete edition of Shovel Knight, a sweeping classic action-adventure game series with awesome gameplay, memorable characters, and an 8-bit retro aesthetic! Run, jump, and battle as Shovel Knight, wielder of the Shovel Blade, in a quest for his lost beloved. Take down the nefarious knights of the Order of No Quarter and confront their menacing leader, The Enchantress.\n\nBut that’s not everything! Shovel Knight: Treasure Trove also features four additional games all unto themselves! Take control of Plague Knight, Specter Knight, and King Knight…",
+   "developers": [
+    "Yacht Club Games"
+   ],
+   "publishers": [
+    "Yacht Club Games"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e42191c4c4b74be5b86cbc908abf7ae3_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000121/2a52dd0769e5d8dba0d9d8d1aaf23803068b6350d2cbfb680df2fa113c23ec8f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/shovel-knight-treasure-trove-switch/",
+   "format": "Digital",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-oot",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-oot",
+   "name": "The Legend of Zelda: Ocarina of Time",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2026,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Become the Hero of Time and save Hyrule from darkness",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000130792/da79eecb8ff4a1918790e0084cfcf8581a40f4864854e7a95615f5d43f41f937",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000130792/21d17919819cffebda2817f9b0110116c28568e0b6fa30a9778f1679271be809",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+   "format": "Digital",
+   "switchFamily": "switch2"
+  },
+  {
+   "id": "nsw-mario-rabbids-kingdom-battle",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-rabbids-kingdom-battle",
+   "name": "Mario + Rabbids Kingdom Battle",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Adventure",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Two worlds collide in Mario + Rabbids® Kingdom Battle!\n\nThe Mushroom Kingdom has been torn apart by a mysterious vortex, transporting the chaotic Rabbids into this once-peaceful land. To restore order, Mario, Luigi, Princess Peach, and Yoshi must team up with a whole new crew: four Rabbids heroes! Together, they will battle with weapons through four worlds filled with combat, puzzles, and unpredictable enemies.\n\nDeveloped exclusively for the Nintendo Switch™ system,\nMario + Rabbids Kingdom Battle is the best of the Mario and Rabbids franchises, combining all that you love about Mario’s…",
+   "developers": [
+    "Ubisoft Paris"
+   ],
+   "publishers": [
+    "Ubisoft"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b71b0f5fd9f8472a83fac858517cd133_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000819/c0544d71c50c0595b8589451e9fc8b2deaf5cab52415202e0585e137fbe3d5fb",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-plus-rabbids-kingdom-battle-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-splatoon-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-splatoon-2",
+   "name": "Splatoon 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Shooting"
+   ],
+   "type": "game",
+   "shortDescription": "Ink-splatting action is back and fresher than ever",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a6624216e0a74bf99bc516d223284b02_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000529/b0b183a9860296016649fadb03b929411e7e5e0809af241e2e9652ebf0c5a715",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/splatoon-2-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-skyrim",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-skyrim",
+   "name": "The Elder Scrolls V: Skyrim",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Role playing"
+   ],
+   "type": "game",
+   "shortDescription": "Epic Fantasy Reborn",
+   "developers": [
+    "Bethesda Game Studios"
+   ],
+   "publishers": [
+    "Bethesda"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0c6b217a912e4dcda850eb933ad057be_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001369/3a41386d4b0999365727a21cc5c13853cfc244abca39b689bb79a339601e48c3",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-elder-scrolls-v-skyrim-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-yoshis-crafted-world",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-yoshis-crafted-world",
+   "name": "Yoshi’s Crafted World",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Get crafty with Yoshi in a handicraft world",
+   "developers": [
+    "Good-Feel"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/ed75cddd677b4c438160575c259ead09_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000734/db8a252a84301594bdc4eed1be3dbd8d3de5086bc79f6ee1f8060c9a5630101f",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/yoshis-crafted-world-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-super-mario-party",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-mario-party",
+   "name": "Super Mario Party",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Super-charged fun for friends and family—now with online play in board game mode and minigames!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/be2c8d5f9bcf4e478596df921326a536_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000014158/0ca41128bf40b7e0dc32a046a659ecdc69e4d7cc7a3257d6280be665d2f795b5",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-party-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-luigis-mansion-3",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-luigis-mansion-3",
+   "name": "Luigi’s Mansion 3",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "The hotel is haunted. Mario is missing. And our only hope is…Luigi?!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c0d753bc7e5642edb419ec23e5619106_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001620/2b166fb3197dacfde1d939acd6a976b9fbe3b1a32c54f9f0d2c8d23efb22412d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/luigis-mansion-3-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-kirby-star-allies",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-kirby-star-allies",
+   "name": "Kirby Star Allies",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Classic Kirby enemies are his new best friends!",
+   "developers": [
+    "HAL Laboratory, Inc."
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dba6cc01aee842cd8859f14ccbc4d5a3_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002365/56eb33b93862176250495b53d3ad8fee4f84a73a5d99da99585260b403a6ec69",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/kirby-star-allies-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pokken-tournament-dx",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pokken-tournament-dx",
+   "name": "Pokkén Tournament DX",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Fighting"
+   ],
+   "type": "game",
+   "shortDescription": "Pokémon comes to Nintendo Switch",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/99216120bdfd4a28887a11dbb0cc9603_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001132/92721f9dac0b86ff11694424bcac9b263cbd7904bc6f9da5a2eaa09bd9d1c855",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pokken-tournament-dx-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-party-superstars",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-party-superstars",
+   "name": "Mario Party Superstars",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2021,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Party",
+    "Tabletop"
+   ],
+   "type": "game",
+   "shortDescription": "Join the party and prove you’re the board game superstar!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3416f66b6c2e47dc885351e33018ff87_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000042934/ae43ce2e25afbc4c069c2920075ead01a84f02dfe55b87876268409f6ccc0304",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-party-superstars-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-arms",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-arms",
+   "name": "ARMS",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Fighting"
+   ],
+   "type": "game",
+   "shortDescription": "Reach beyond the average fighter",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0a208d0de86a4340a6914bf4cf07f9ae_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000392/f904982d4ad208926f0ae354b7295548d37ae4389e78192fae941fbd0e94f46b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/arms-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-mario-tennis-aces",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-mario-tennis-aces",
+   "name": "Mario Tennis Aces",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Party",
+    "Sports"
+   ],
+   "type": "game",
+   "shortDescription": "Up your game with Zone Speed and Zone Shot",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/da34d7f30d034a5db643d318e409da03_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000003889/7d4bb0a9ace1fb56a41aae8ef0d4ee806419e6187afdb4697a598458f02cd8e7",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/mario-tennis-aces-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-super-mario-odyssey",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-mario-odyssey",
+   "name": "Super Mario Odyssey",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Embark on a cap-tivating, globe-trotting adventure",
+   "developers": [
+    "Nintendo"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/350f1d1a5f3d4a7bbb381b3f0f038981_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-kirby-forgotten-land",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-kirby-forgotten-land",
+   "name": "Kirby and the Forgotten Land",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2022,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "Join Kirby in an unforgettable journey through a mysterious world in a 3D platforming adventure",
+   "developers": [
+    "HAL Laboratory"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5f79fbade00f4fdba23d7df29cb5821f_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000046405/d1cf83dea46094b85247f40ca30ea4557730a319be0bfe544a4fa929144cf6c2",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-dkc-tropical-freeze",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-dkc-tropical-freeze",
+   "name": "Donkey Kong Country: Tropical Freeze",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Swing into action on Nintendo Switch\n—anytime, anywhere!",
+   "developers": [
+    "Retro Studios"
+   ],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/42c5d1a0bde94b18b35d6babe6e2a436_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001339/d01cba67eb98fec32ac98027c07fa8d92dd52773565bfadc69f817c860e34b8a",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/donkey-kong-country-tropical-freeze-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-captain-toad",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-captain-toad",
+   "name": "Captain Toad: Treasure Tracker",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure",
+    "Puzzle"
+   ],
+   "type": "game",
+   "shortDescription": "Ready for adventure!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/54e7b36b95a04cdaa778f007890419c1_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000002722/7d17e538e855a6214e27ce1eb782068d09bffa6ccbc75fb7a4e61773040c1ab5",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/captain-toad-treasure-tracker-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-zelda-links-awakening",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-zelda-links-awakening",
+   "name": "The Legend of Zelda: Link’s Awakening",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "“Castaway, you should know the truth!”",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1b012930f4194a69b1fe6f55cf7cc906_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000020033/df825d5fc6747b66b051f5d3ba6a412fe625ea7878b6a10c93bb8312195682b1",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-links-awakening-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pikmin-4",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pikmin-4",
+   "name": "Pikmin 4",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure",
+    "Strategy"
+   ],
+   "type": "game",
+   "shortDescription": "Raise a crop of plantlike Pikmin and guide them on an endearing expedition!",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/8c6bf401e7e3448e9d0ee9c7dfbed149_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000005308/43af89ed5bd76ac5ec6b367b4b53092f8bf94a1d1312fdfc1d4664329fd5077b",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pikmin-4-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-super-mario-maker-2",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-super-mario-maker-2",
+   "name": "Super Mario Maker 2",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2019,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Make it Your Way, Play it Your Way.",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cad567579b6f437882b8c784dba73131_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000018694/aac100206f1c50349fd2c48595e55603259ae60a4ab4eefc28e71f41efb78b97",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/super-mario-maker-2-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-zelda-totk",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-zelda-totk",
+   "name": "The Legend of Zelda: Tears of the Kingdom",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2023,
+   "comingSoon": false,
+   "genres": [
+    "Action",
+    "Adventure"
+   ],
+   "type": "game",
+   "shortDescription": "An epic adventure across the land and skies of Hyrule awaits in The Legend of Zelda™: Tears of the Kingdom for Nintendo Switch™. The adventure is yours to create in a world fueled by your imagination.\n\nIn this sequel to The Legend of Zelda: Breath of the Wild, you’ll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link’s new abilities to fight back against the malevolent forces that threaten the kingdom?",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/589e100ec126490fb28d407b7c3b97a0_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000063714/fb30eab428df3fc993b41c76e20f72e4d76d49734d17d31996b5ab61c414b117",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-bakugan-vestroia",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-bakugan-vestroia",
+   "name": "Bakugan: Champions of Vestroia",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": null,
+   "comingSoon": false,
+   "genres": [],
+   "type": "game",
+   "shortDescription": "",
+   "developers": [],
+   "publishers": [],
+   "image": {
+    "portrait": null,
+    "header": null,
+    "capsule": null
+   },
+   "storeUrl": null,
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-pokemon-lets-go-pikachu",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-pokemon-lets-go-pikachu",
+   "name": "Pokémon: Let’s Go, Pikachu!",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2018,
+   "comingSoon": false,
+   "genres": [
+    "Role playing",
+    "Simulation"
+   ],
+   "type": "game",
+   "shortDescription": "The next step in your Pokémon™ journey starts here",
+   "developers": [],
+   "publishers": [
+    "Nintendo"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/93ec5275b9a94aadb9f5140c5edce3b0_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000000447/8b2acaf2549895635f8d706eac06b3751e56bc3a970b04a937dcdec3e87ad3bf",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/pokemon-lets-go-pikachu-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
+  },
+  {
+   "id": "nsw-sonic-forces-bonus",
+   "platform": "switch2",
+   "store": "nintendo",
+   "appid": "nsw-sonic-forces-bonus",
+   "name": "Sonic Forces: Bonus Edition",
+   "minutesPlayed": null,
+   "hoursPlayed": null,
+   "lastPlayed": null,
+   "neverPlayed": null,
+   "year": 2017,
+   "comingSoon": false,
+   "genres": [
+    "Action"
+   ],
+   "type": "game",
+   "shortDescription": "Join the Uprising",
+   "developers": [
+    "Sonic Team"
+   ],
+   "publishers": [
+    "SEGA"
+   ],
+   "image": {
+    "portrait": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/09f6ca2c7b574c41af9e812027d290bb_1024",
+    "header": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000001539/09f5c1cc17e3fbe9471a284ce3c214824ed0553e324c0e89011630194222063d",
+    "capsule": null
+   },
+   "storeUrl": "https://www.nintendo.com/us/store/products/sonic-forces-switch/",
+   "format": "Physical",
+   "switchFamily": "switch1"
   }
  ]
 }
