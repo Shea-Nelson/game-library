@@ -90,7 +90,11 @@ body {
   font: 17px/1.6 var(--sans);
   min-height: 100vh;
   text-size-adjust: 100%;
+  font-size-adjust: from-font;
 }
+h1, h2, h3, .quote, .brand span, .rowcard strong, .steps li::before { font-size-adjust: from-font; }
+.hand, .rowcard .lead { font-size-adjust: from-font; }
+.kicker { font-size-adjust: cap-height from-font; }
 img { max-width: 100%; height: auto; }
 a { color: var(--sky); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
 a:hover { text-decoration-thickness: 2px; }

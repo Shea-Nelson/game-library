@@ -23,6 +23,12 @@ function h(tag, attrs, ...kids) {
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+function externalLink(attrs, ...kids) {
+  const a = h("a", Object.assign({ target: "_blank", rel: "noopener noreferrer" }, attrs), ...kids);
+  a.append(h("span", { class: "sr" }, " (opens in a new tab)"));
+  return a;
+}
+
 function fillCell(td, cell, label) {
   td.dataset.label = label;
   if (cell && typeof cell === "object") {
@@ -32,7 +38,7 @@ function fillCell(td, cell, label) {
   }
   const s = cell == null ? "" : String(cell);
   if (/^https?:\/\//.test(s)) {
-    td.append(h("a", { href: s, target: "_blank", rel: "noopener noreferrer" }, s));
+    td.append(externalLink({ href: s }, s));
     return;
   }
   td.textContent = s;
@@ -140,7 +146,7 @@ function render(node, level) {
   if (t === "LinkCards") {
     const grid = h("div", { class: "link-grid" });
     (p.links || []).forEach((link) => {
-      const a = h("a", { class: "link-card", href: link.href, target: "_blank", rel: "noopener noreferrer" },
+      const a = externalLink({ class: "link-card", href: link.href },
         h("strong", null, link.title || link.href),
         h("small", null, [link.site, link.date].filter(Boolean).join(" · ")));
       grid.append(a);
@@ -154,7 +160,7 @@ function render(node, level) {
       const s = String(item);
       const m = s.match(/^(.*?)(https?:\/\/\S+)$/);
       if (m) {
-        li.append(m[1], h("a", { href: m[2], target: "_blank", rel: "noopener noreferrer" }, m[2]));
+        li.append(m[1], externalLink({ href: m[2] }, m[2]));
       } else li.textContent = s;
       ul.append(li);
     });
@@ -204,7 +210,7 @@ export function renderPage(node, mount) {
   mount.append(hero, body);
   if (p.sources && p.sources.length) {
     const list = h("ul", { class: "bullets" });
-    p.sources.forEach((src) => list.append(h("li", null, h("a", { href: src, target: "_blank", rel: "noopener noreferrer" }, src))));
+    p.sources.forEach((src) => list.append(h("li", null, externalLink({ href: src }, src))));
     body.append(h("section", { class: "sources block" }, h("h2", null, "Sources"), list));
   }
 }

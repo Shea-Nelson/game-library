@@ -6,6 +6,8 @@
 <title>Shea's Game Shelf · The Nelson family game library</title>
 <meta name="description" content="The Nelson family's game library: board games with box art, rulebooks, and how-to-play videos, plus Shea's Steam library on PC. Filterable and sortable.">
 <meta name="theme-color" content="#2a1d5c">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://shea-nelson.github.io/game-library/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232a1d5c'/><circle cx='22' cy='22' r='6' fill='%23f6c56b'/><circle cx='42' cy='42' r='6' fill='%23f6c56b'/><circle cx='42' cy='22' r='6' fill='%2370e0cf'/><circle cx='22' cy='42' r='6' fill='%2370e0cf'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,14 @@
 <link rel="stylesheet" href="css/style.css">
 <script>
   (function(){try{
-    var t=localStorage.getItem('gs-theme');if(t)document.documentElement.setAttribute('data-theme',t);
+    var t=localStorage.getItem('gs-theme');
+    if(t==='light'||t==='dark'){
+      document.documentElement.setAttribute('data-theme',t);
+      var m=document.querySelector('meta[name="color-scheme"]');
+      if(m)m.setAttribute('content',t);
+      var c=document.querySelector('meta[name="theme-color"]');
+      if(c)c.setAttribute('content',t==='dark'?'#1a1240':'#2a1d5c');
+    }
     var s=location.hash;
     if(/^#video(\/|$)/.test(s))document.documentElement.setAttribute('data-shelf','video');
     else if(/^#game\//.test(s)||s==='#board')document.documentElement.setAttribute('data-shelf','board');
@@ -24,6 +33,7 @@
 </head>
 <body>
 <a class="skip" href="#grid">Skip to games</a>
+<noscript><p class="noscript">This page needs JavaScript to show the game library.</p></noscript>
 
 <header class="hero" id="top">
   <div class="hero__glow" aria-hidden="true"></div>
@@ -47,11 +57,11 @@
       <button type="button" role="radio" aria-checked="false" data-shelf="video" id="shelfVideo">Video games</button>
     </div>
     <div class="toolbar__row">
-      <label class="search">
-        <span class="sr-only">Search games</span>
+      <search class="search">
+        <label class="sr-only" for="q">Search board games</label>
         <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input id="q" type="search" placeholder="Search games, designers, mechanics…" autocomplete="off" enterkeyhint="search">
-      </label>
+      </search>
       <div class="sort">
         <label for="sortBy" class="sr-only">Sort by</label>
         <select id="sortBy">
@@ -148,7 +158,7 @@
   </div>
 </footer>
 
-<dialog class="detail" id="detail" aria-labelledby="dTitle">
+<dialog class="detail" id="detail" aria-labelledby="dTitle" closedby="any">
   <div class="detail__inner" id="detailBody"></div>
 </dialog>
 
