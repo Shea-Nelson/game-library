@@ -3,6 +3,7 @@
   "use strict";
   const $ = (s, r = document) => r.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const NEW_TAB = '<span class="sr-only"> (opens in a new tab)</span>';
   const slug = (s) => String(s).toLowerCase().normalize("NFKD").replace(/[^\w\s-]/g, "").trim().replace(/[\s_]+/g, "-").replace(/-+/g, "-");
   const HUES = [262, 285, 172, 328, 222];
   const hue = (id) => {
@@ -300,6 +301,8 @@
     $("#heroTitle").textContent = copy.title;
     $("#heroLede").textContent = copy.lede;
     $("#q").placeholder = copy.search;
+    const qLabel = document.querySelector('label[for="q"]');
+    if (qLabel) qLabel.textContent = video ? "Search video games" : "Search board games";
     $("#grid").setAttribute("aria-label", video ? "Video games" : "Board games");
     document.title = copy.doc;
     ["playerRow", "boardFilterGrid"].forEach((id) => { const el = $("#" + id); if (el) el.hidden = video; });
@@ -437,20 +440,44 @@
         location.hash = state.shelf === "video" ? "#video" : "#board";
         setTimeout(() => { silentHash = false; }, 0);
       }
+      // Hash routing opens the dialog from script, so the browser has no invoker to restore.
       restoreFocus();
     });
-    dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+    // closedby="any" covers click-outside where it exists. Safari still needs this.
+    if (!("closedBy" in HTMLDialogElement.prototype)) {
+      let pressedOutside = false;
+      const outside = (e, dialog) => {
+        const r = dialog.getBoundingClientRect();
+        return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+      };
+      dlg.addEventListener("pointerdown", (e) => { pressedOutside = outside(e, dlg); });
+      dlg.addEventListener("pointerup", (e) => { if (pressedOutside && outside(e, dlg)) dlg.close(); });
+    }
 
-    // theme
+    // theme — light by default; an explicit choice is remembered. Meta stays in sync with that choice.
     const tt = $("#themeToggle");
-    const syncTheme = () => { const dark = document.documentElement.getAttribute("data-theme") === "dark"; tt.setAttribute("aria-pressed", String(dark)); tt.querySelector(".theme-toggle__label").textContent = dark ? "Light mode" : "Dark mode"; };
+    const paintTheme = (next) => {
+      if (next !== "light" && next !== "dark") next = "light";
+      document.documentElement.setAttribute("data-theme", next);
+      const scheme = document.querySelector('meta[name="color-scheme"]');
+      if (scheme) scheme.setAttribute("content", next);
+      const color = document.querySelector('meta[name="theme-color"]');
+      if (color) color.setAttribute("content", next === "dark" ? "#1a1240" : "#2a1d5c");
+      const dark = next === "dark";
+      tt.setAttribute("aria-pressed", String(dark));
+      const label = tt.querySelector(".theme-toggle__label");
+      if (label) label.textContent = dark ? "Light mode" : "Dark mode";
+    };
     tt.addEventListener("click", () => {
       const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
       try { localStorage.setItem("gs-theme", next); } catch (e) {}
-      syncTheme();
+      paintTheme(next);
     });
-    syncTheme();
+    window.addEventListener("storage", (e) => {
+      if (e.key !== "gs-theme" || (e.newValue !== "light" && e.newValue !== "dark")) return;
+      paintTheme(e.newValue);
+    });
+    paintTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
 
     update();
     route();
@@ -557,7 +584,7 @@
   };
   function sorted(list) {
     const k = KEYS[state.sort] || KEYS.name, d = state.dir === "asc" ? 1 : -1;
-    return list.slice().sort((a, b) => {
+    return list.toSorted((a, b) => {
       const x = k(a), y = k(b);
       if (x == null && y == null) return sortName(a).localeCompare(sortName(b));
       if (x == null) return 1; if (y == null) return -1;
@@ -573,9 +600,9 @@
     const best = g.bestPlayers ? `<span class="best">Best ${esc(g.bestPlayers)}</span>` : "";
     const t = timeText(g);
     const exp = (g.expansions || []).length ? ` · +${g.expansions.length} exp.` : "";
-    return `<li class="card" style="--i:${Math.min(i, 30)};--h:${hue(g.bggId)}">
+    return `<li class="card${i >= 8 ? " card--defer" : ""}" style="--i:${Math.min(i, 30)};--h:${hue(g.bggId)}">
       <a class="card__btn" href="#game/${g._slug}" aria-label="${esc(g.name)}: details">
-        <div class="card__art"><img src="${esc(g.image.local || g.image.remote)}" alt="Box art for ${esc(g.name)}" loading="${i < 8 ? "eager" : "lazy"}" decoding="async" width="246" height="300"
+        <div class="card__art"><img src="${esc(g.image.local || g.image.remote)}" alt="Box art for ${esc(g.name)}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async" width="246" height="300"
           onerror="if(this.dataset.f!=='1'){this.dataset.f='1';this.src='${esc(g.image.remote || "")}'}"></div>
         ${flags ? `<div class="card__flags">${flags}</div>` : ""}
         <div class="card__body">
@@ -609,6 +636,7 @@
     const portrait = esc((g.image && g.image.portrait) || "");
     const header = esc((g.image && g.image.header) || "");
     const capsule = esc((g.image && g.image.capsule) || "");
+    const cover = portrait || header || capsule;
     const initial = esc(((g.name || "?").trim().charAt(0) || "?").toUpperCase());
     const platBadge = g.store === "steam" ? "Steam" : (family || "Nintendo");
     const yearBits = [g.year, family || (switchGame ? null : platformLabel(g.platform))].filter(Boolean).join(" · ");
@@ -617,10 +645,10 @@
     if (last) metaBits.push(`<span>${ICON.clock}Last played ${esc(last)}</span>`);
     else if (g.neverPlayed) metaBits.push(`<span>Not launched yet</span>`);
     else if (family === "Switch 1") metaBits.push(`<span>Playing on Switch 2</span>`);
-    return `<li class="card card--video" style="--i:${Math.min(i, 30)};--h:${hue(g.appid || 0)}">
+    return `<li class="card card--video${i >= 8 ? " card--defer" : ""}" style="--i:${Math.min(i, 30)};--h:${hue(g.appid || 0)}">
       <a class="card__btn" href="#video/${g._slug}" aria-label="${esc(g.name)}: ${esc(ariaExtra)}">
-        <div class="card__art${portrait || header || capsule ? "" : " card__art--missing"}">
-          ${portrait || header || capsule ? `<img src="${portrait}" alt="Cover art for ${esc(g.name)}" loading="${i < 8 ? "eager" : "lazy"}" decoding="async" width="200" height="300"
+        <div class="card__art${cover ? "" : " card__art--missing"}">
+          ${cover ? `<img src="${cover}" alt="Cover art for ${esc(g.name)}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async" width="${portrait ? 600 : header ? 460 : 616}" height="${portrait ? 900 : header ? 215 : 353}"
             data-fallback="${header}" data-fallback2="${capsule}"
             onerror="window.__artFallback&&window.__artFallback(this)">` : ""}
           <div class="card__monogram" aria-hidden="true">${initial}</div>
@@ -685,15 +713,15 @@
   function linkRow(kind, l, extra = "") {
     if (!l) return "";
     const note = l.note ? `<span class="note">${esc(l.note)}</span>` : "";
-    return `<li><span class="kind">${esc(kind)}</span><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title || l.url)}</a>${extra}${vbadge(l)}${note}</li>`;
+    return `<li><span class="kind">${esc(kind)}</span><a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.title || l.url)}${NEW_TAB}</a>${extra}${vbadge(l)}${note}</li>`;
   }
   function videoBlock(v) {
     if (!v) return "";
     const id = esc(v.youtubeId);
     return `<div class="video" data-yt="${id}"><button type="button" aria-label="Play video: ${esc(v.title)}">
-        <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Video thumbnail: ${esc(v.title)}" loading="lazy">
+        <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Video thumbnail: ${esc(v.title)}" width="480" height="360" decoding="async" loading="lazy">
         <span class="play">${ICON.bigplay}</span></button></div>
-      <p class="vmeta"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> · ${esc(v.channel || "YouTube")}
+      <p class="vmeta"><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">${esc(v.title)}${NEW_TAB}</a> · ${esc(v.channel || "YouTube")}
       ${v.channelType === "preferred" ? '<span class="badge badge--ok">Trusted teacher</span>' : v.channelType === "publisher" ? '<span class="badge badge--ok">Publisher</span>' : ""}
       ${v.kind && v.kind !== "how-to-play" ? `<span class="badge badge--soft">${esc(v.kind)}</span>` : ""}${vbadge(v)}</p>
       ${v.note ? `<p class="note" style="margin-left:0">${esc(v.note)}</p>` : ""}`;
@@ -702,7 +730,7 @@
     if (!list || !list.length) return "";
     return `<ul class="hr-list">${list.map((h) => `<li><h4>${esc(h.name)} <span class="badge ${h.kind === "Official" ? "badge--ok" : "badge--comm"}">${h.kind === "Official" ? "Official variant" : "Community house rule"}</span></h4>
       <p>${esc(h.description)}</p>
-      <div>${(h.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")} <a href="${esc(h.url)}" target="_blank" rel="noopener">Source</a>${vbadge(h)}</div></li>`).join("")}</ul>`;
+      <div>${(h.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")} <a href="${esc(h.url)}" target="_blank" rel="noopener noreferrer">Source${NEW_TAB}</a>${vbadge(h)}</div></li>`).join("")}</ul>`;
   }
   function detailHTML(g) {
     const L = g.links || {};
@@ -714,16 +742,16 @@
     const anyBgg = [L.manual, ...(L.errata || []), ...(L.guides || [])].some((l) => l && isBgg(l.url));
     const errata = (L.errata || []).map((e) => linkRow("Errata / FAQ", e, ` <span class="badge ${e.official ? "badge--ok" : "badge--comm"}">${e.official ? "Official" : "Community"}</span>`)).join("");
     const guides = (L.guides || []).map((x) => linkRow("Guide", x)).join("");
-    const exps = (g.expansions || []).map((e) => `<li class="exp"><img src="${esc(e.image.local || e.image.remote)}" alt="Box art for ${esc(e.name)}" loading="lazy">
+    const exps = (g.expansions || []).map((e) => `<li class="exp"><img src="${esc(e.image.local || e.image.remote)}" alt="Box art for ${esc(e.name)}" decoding="async" loading="lazy">
         <div><h4>${esc(e.name)}</h4><p class="d-desc" style="font-size:.95rem">${esc(e.shortDescription || "")}</p>
         <ul class="links">${linkRow("Rules", e.links && e.links.manual)}${e.video ? linkRow("Video", { url: e.video.url, title: e.video.title + " · " + e.video.channel, verified: e.video.verified }) : ""}
         ${linkRow("BGG", { url: e.bggUrl, title: "BoardGameGeek page" })}</ul></div></li>`).join("");
-    const rel = (g.relatedOwnedIds || []).map((id) => byId.get(id)).filter(Boolean).map((r) => `<a href="#game/${r._slug}"><img src="${esc(r.image.local || r.image.remote)}" alt="Box art for ${esc(r.name)}" loading="lazy">${esc(r.name)}</a>`).join("");
-    const mistakes = (g.rulesMistakes || []).map((m) => `<li><p>${esc(m.text)}</p><a href="${esc(m.url)}" target="_blank" rel="noopener">Source</a>${vbadge(m)}</li>`).join("");
+    const rel = (g.relatedOwnedIds || []).map((id) => byId.get(id)).filter(Boolean).map((r) => `<a href="#game/${r._slug}"><img src="${esc(r.image.local || r.image.remote)}" alt="Box art for ${esc(r.name)}" width="40" height="40" decoding="async" loading="lazy">${esc(r.name)}</a>`).join("");
+    const mistakes = (g.rulesMistakes || []).map((m) => `<li><p>${esc(m.text)}</p><a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer">Source${NEW_TAB}</a>${vbadge(m)}</li>`).join("");
     return `
       <header class="d-head" style="--h:${hue(g.bggId)}">
         <button type="button" class="d-close" aria-label="Close details">${ICON.close}</button>
-        <img src="${esc(g.image.local || g.image.remote)}" alt="Box art for ${esc(g.name)}">
+        <img src="${esc(g.image.local || g.image.remote)}" alt="Box art for ${esc(g.name)}" decoding="async">
         <div>
           <p class="d-kicker">${g.year || ""}${g.publisher ? " · " + esc(g.publisher) : ""}</p>
           <h2 class="d-title" id="dTitle">${esc(g.name)}</h2>
@@ -787,7 +815,7 @@
     return `
       <header class="d-head d-head--video" style="--h:${hue(g.appid || 0)}">
         <button type="button" class="d-close" aria-label="Close details">${ICON.close}</button>
-        ${artSrc ? `<img src="${artSrc}" alt="Cover art for ${esc(g.name)}"
+        ${artSrc ? `<img src="${artSrc}" alt="Cover art for ${esc(g.name)}" decoding="async"${portrait ? ' width="600" height="900"' : header && artSrc === header ? ' width="460" height="215"' : capsule && artSrc === capsule ? ' width="616" height="353"' : ""}
           data-fallback="${header}" data-fallback2="${capsule}"
           onerror="window.__artFallback&&window.__artFallback(this)">` : `<div class="card__monogram" aria-hidden="true">${esc(((g.name || "?").trim().charAt(0) || "?").toUpperCase())}</div>`}
         <div>
@@ -817,7 +845,7 @@
     body.querySelector(".d-close").addEventListener("click", () => dlg.close());
     body.querySelectorAll(".video button").forEach((b) => b.addEventListener("click", () => {
       const box = b.parentElement, id = box.dataset.yt;
-      box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${esc(g.name)} how-to-play video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+      box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${esc(g.name)} how-to-play video" width="560" height="315" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     }));
     document.title = `${g.name} · Shea's Game Shelf`;
     if (!dlg.open) dlg.showModal();

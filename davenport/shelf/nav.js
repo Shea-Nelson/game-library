@@ -24,21 +24,40 @@ function currentKey() {
   return "hub";
 }
 
-function applyTheme(next) {
-  if (next) document.documentElement.setAttribute("data-theme", next);
-  else document.documentElement.removeAttribute("data-theme");
-  try {
-    if (next) localStorage.setItem("shelf-theme", next);
-    else localStorage.removeItem("shelf-theme");
-  } catch (e) {}
+function resolvedDark() {
+  const explicit = document.documentElement.getAttribute("data-theme");
+  if (explicit === "dark") return true;
+  if (explicit === "light") return false;
+  return matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
+function syncThemeControl() {
+  const dark = resolvedDark();
   const btn = document.querySelector(".theme-btn");
+  const color = document.querySelector('meta[name="theme-color"]');
+  if (color) color.setAttribute("content", dark ? "#161310" : "#f4efe6");
   if (!btn) return;
-  const dark = document.documentElement.getAttribute("data-theme")
-    ? document.documentElement.getAttribute("data-theme") === "dark"
-    : matchMedia("(prefers-color-scheme: dark)").matches;
   btn.setAttribute("aria-pressed", dark ? "true" : "false");
   btn.textContent = dark ? "Light" : "Dark";
   btn.setAttribute("aria-label", dark ? "Switch to light colors" : "Switch to dark colors");
+}
+
+function applyTheme(next, persist) {
+  const meta = document.querySelector('meta[name="color-scheme"]');
+  if (next === "light" || next === "dark") {
+    document.documentElement.setAttribute("data-theme", next);
+    if (meta) meta.setAttribute("content", next);
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+    if (meta) meta.setAttribute("content", "light dark");
+  }
+  if (persist !== false) {
+    try {
+      if (next === "light" || next === "dark") localStorage.setItem("shelf-theme", next);
+      else localStorage.removeItem("shelf-theme");
+    } catch (e) {}
+  }
+  syncThemeControl();
 }
 
 function buildHeader() {
@@ -80,9 +99,7 @@ function buildHeader() {
   theme.type = "button";
   theme.className = "theme-btn";
   theme.addEventListener("click", () => {
-    const explicit = document.documentElement.getAttribute("data-theme");
-    const dark = explicit ? explicit === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-    applyTheme(dark ? "light" : "dark");
+    applyTheme(resolvedDark() ? "light" : "dark");
   });
   header.append(brand, nav, theme);
   return header;
@@ -92,4 +109,12 @@ const skip = document.querySelector(".skip");
 const header = buildHeader();
 if (skip) skip.after(header);
 else document.body.prepend(header);
-applyTheme(document.documentElement.getAttribute("data-theme"));
+applyTheme(document.documentElement.getAttribute("data-theme"), false);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+  if (!document.documentElement.getAttribute("data-theme")) syncThemeControl();
+});
+window.addEventListener("storage", (e) => {
+  if (e.key !== "shelf-theme") return;
+  const next = e.newValue === "light" || e.newValue === "dark" ? e.newValue : null;
+  applyTheme(next, false);
+});

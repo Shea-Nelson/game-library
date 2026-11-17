@@ -43,7 +43,7 @@
 .props div { display: grid; gap: 2px; background: var(--card); border: 1.5px solid var(--line); border-radius: 14px; padding: 10px 12px; }
 .props dt { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--soft); }
 .props dd { margin: 0; font-weight: 800; }
-.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-wrap { overflow-x: auto; }
 table.data { width: 100%; border-collapse: collapse; }
 table.data th, table.data td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
 table.data th { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--soft); }
@@ -74,7 +74,7 @@ table.data th { font-size: 12px; letter-spacing: .06em; text-transform: uppercas
 .sources { margin-top: 28px; font-size: 14px; color: var(--soft); }
 .sources a { word-break: break-all; }
 @media (max-width: 720px) {
-  table.data thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  table.data thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); clip-path: inset(50%); white-space: nowrap; }
   table.data, table.data tbody, table.data tr, table.data td { display: block; width: 100%; }
   table.data tr {
     margin: 0 0 12px; border: 1.5px solid var(--line); border-radius: 16px; padding: 8px 10px; background: var(--card);
