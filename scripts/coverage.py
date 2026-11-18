@@ -28,7 +28,7 @@ gaps={"noVideo":[x['name'] for x in g if not x['video']],
 }
 json.dump({"stats":stats,"gaps":gaps},open(B+"/data/coverage.json","w"),indent=1,ensure_ascii=False)
 L=["# Game library data: coverage report",f"Generated {stats['generated']} (America/New_York)","",
-f"- {n} base games, {ex} expansions nested under their base game ({n+ex} owned entries; live BGG collection matched the Nov 7 snapshot, 113 entries).",
+f"- {n} base games, {ex} expansions nested under their base game ({n+ex} owned entries). The Nov 7, 2026 BGG collection snapshot was 113 entries; Agricola: Special Edition (440147) was added Nov 18, 2026 from the received box (not yet confirmed on the live BGG collection).",
 f"- Box art downloaded locally: {stats['boxArtLocal']}/{n} (img/<bggid>.jpg; expansions also have art).",
 f"- Manual/rulebook: {man['publisher']} publisher links ({stats['manualPublisherUnverified']} not confirmed by our checker), {man['bgg_file']} BGG rulebook file pages, {man['bgg_files_page']} fall back to the BGG files page.",
 f"- Errata/FAQ: {stats['errataAny']}/{n} (official publisher FAQ: {stats['errataOfficial']}; the rest are BGG user-compiled).",

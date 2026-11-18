@@ -170,6 +170,87 @@
   "maxPlayersWithExpansions": 2
  },
  {
+  "bggId": 440147,
+  "bggUrl": "https://boardgamegeek.com/boardgame/440147/agricola-special-edition",
+  "name": "Agricola: Special Edition",
+  "bggName": "Agricola: Special Edition",
+  "edition": null,
+  "year": 2026,
+  "image": {
+   "local": "img/440147.jpg",
+   "remote": "https://cf.geekdo-images.com/xjKHDCMXRs7LyKneFV3bxQ__itemrep/img/36FFlWCWximibvSvw2oV_7c-wcw=/fit-in/246x300/filters:strip_icc()/pic9782075.png",
+   "thumb": "https://cf.geekdo-images.com/xjKHDCMXRs7LyKneFV3bxQ__small/img/CIPuvNXlDjnlUSVEUiWrw5O5Fk4=/fit-in/200x150/filters:strip_icc()/pic9782075.png"
+  },
+  "minPlayers": 1,
+  "maxPlayers": 6,
+  "bestPlayers": "4",
+  "recommendedPlayers": "1-4",
+  "playerPollVotes": 10,
+  "minPlayTime": 45,
+  "maxPlayTime": 120,
+  "minAge": 14,
+  "communityAge": "5–6",
+  "weight": 3.67,
+  "weightVotes": 12,
+  "bggRating": 6.64,
+  "bggRank": 0,
+  "categories": [
+   "Animals",
+   "Economic",
+   "Farming"
+  ],
+  "mechanics": [
+   "Automatic Resource Growth",
+   "Closed Drafting",
+   "Enclosure",
+   "Increase Value of Unchosen Resources",
+   "Solo / Solitaire Game",
+   "Turn Order: Claim Action",
+   "Worker Placement"
+  ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "publisher": "Awaken Realms",
+  "shortDescription": "Brings the farming classic to life with new art, refined usability, and expansions.",
+  "publisherSite": null,
+  "links": {
+   "manual": {
+    "url": "https://boardgamegeek.com/boardgame/440147/agricola-special-edition/files",
+    "title": "BGG files page",
+    "source": "bgg_files_page",
+    "verified": true,
+    "note": "No publisher PDF found; check BGG files."
+   },
+   "filesPage": "https://boardgamegeek.com/boardgame/440147/agricola-special-edition/files",
+   "errata": [],
+   "guides": [],
+   "rulesForum": {
+    "url": "https://boardgamegeek.com/boardgame/440147/agricola-special-edition/forums/66",
+    "title": "BGG Rules forum (2 threads)",
+    "source": "bgg_forum",
+    "verified": true,
+    "threads": 2
+   },
+   "variantsForum": {
+    "url": "https://boardgamegeek.com/boardgame/440147/agricola-special-edition/forums/69",
+    "title": "BGG Variants forum (2 threads)",
+    "source": "bgg_forum",
+    "verified": true,
+    "threads": 2
+   }
+  },
+  "houseRules": [],
+  "rulesMistakes": [],
+  "video": null,
+  "videoMissingReason": "No how-to-play video found for this edition. Searches turned up Special Edition unboxings and how-to-play videos for earlier Agricola editions only.",
+  "isExpansion": false,
+  "expansions": [],
+  "relatedOwnedIds": [],
+  "expansionCount": 0,
+  "maxPlayersWithExpansions": 6
+ },
+ {
   "bggId": 74,
   "bggUrl": "https://boardgamegeek.com/boardgame/74/apples-to-apples",
   "name": "Apples to Apples",
